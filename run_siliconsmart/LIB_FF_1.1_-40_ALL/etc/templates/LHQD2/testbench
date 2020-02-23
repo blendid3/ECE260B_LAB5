@@ -1,0 +1,30 @@
+set vectors ""
+
+## Cin__D__lh__ACQ_1
+append vectors " {pins { D E } { Q }} 010  000  100  "
+
+## Cin__D__hl__ACQ_1
+append vectors " {pins { D E } { Q }} 111  101  001  "
+
+## cmpw__E__lh__E__hl__ACQ_1
+append vectors " {pins { D E } { Q }} 010  000  100  111  101  "
+
+## delay__D__lh__Q__lh__ACQ_1
+append vectors " {pins { D E } { Q }} 010  111  "
+
+## delay__D__hl__Q__hl__ACQ_1
+append vectors " {pins { D E } { Q }} 111  010  "
+
+## delay__E__lh__Q__lh__ACQ_1
+append vectors " {pins { D E } { Q }} 010  000  100  111  "
+
+## delay__E__lh__Q__hl__ACQ_1
+append vectors " {pins { D E } { Q }} 111  101  001  010  "
+
+## energy__E__lh__ACQ_1
+append vectors " {pins { D E } { Q }} 010  000  010  "
+
+## energy__E__hl__ACQ_1
+append vectors " {pins { D E } { Q }} 010  000  "
+
+return $vectors

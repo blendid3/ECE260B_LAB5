@@ -1,0 +1,19 @@
+----------------------------------------------------------------------
+Info:    Log written by SiliconSmart version L-2016.06-SP1-2 on Fri Feb 21 15:13:19 2020
+Info:    Build date: Dec 07, 2016 16:59:49
+Info:    SiliconSmart Path: /software/nonrdist/siliconsmart/linux64/bin/siliconsmart
+Info:    Host Name: ieng6-249.ucsd.edu, User Name: haz023, PID: 4409
+Info:    CPU: 4 x 2000 MHz, Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz (2 socket, 2 core)
+Info:    Memory: 32 GB RAM, 2 GB Swap
+Info:    Directory: /home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart
+Info:    Maximum virtual memory size: 576.57MB
+Info:    Fri Feb 21 15:13:19 2020: Establishing connection to license server
+Info:    Command-line: /software/nonrdist/siliconsmart/linux64/bin/siliconsmart -x create -legacy LIB_FF_1.1_-40_ALL;exit;
+Info:    ================================================
+Info:    Fri Feb 21 15:13:19 PST 2020: Begin create stage
+Info:    The char directory is /home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart/LIB_FF_1.1_-40_ALL
+Info:    Fri Feb 21 15:13:19 PST 2020: Done create stage (Elapsed: 0 seconds | 0.00 hours  Memory: 607.09MB)
+Info:    ===================================================================================================
+Info:    Fri Feb 21 15:13:19 2020: Released license FEATURE SIS_CHAR
+Info:    Fri Feb 21 15:13:19 2020: Program time: 0.00 seconds | 0.00 minutes | 0.00 hours
+Info:    Maximum virtual memory size: 607.086 MB

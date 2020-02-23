@@ -1,0 +1,27 @@
+set vectors ""
+
+## delay__A1__lh__ZN__lh__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 010  111  "
+
+## delay__A1__lh__ZN__hl__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 001  100  "
+
+## delay__A1__hl__ZN__lh__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 100  001  "
+
+## delay__A1__hl__ZN__hl__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 111  010  "
+
+## delay__A2__lh__ZN__lh__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 100  111  "
+
+## delay__A2__lh__ZN__hl__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 001  010  "
+
+## delay__A2__hl__ZN__lh__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 010  001  "
+
+## delay__A2__hl__ZN__hl__ACQ_1
+append vectors " {pins { A1 A2 } { ZN }} 111  100  "
+
+return $vectors

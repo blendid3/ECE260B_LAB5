@@ -1,0 +1,51 @@
+set vectors ""
+
+## Cin__CDN__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00010  10010  "
+
+## Cin__CDN__hl__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00010  10010  00010  "
+
+## cmpw__CDN__hl__CDN__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 10001  10011  00010  10010  "
+
+## cmpw__CP__lh__CP__hl__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00110  10110  11111  10111  "
+
+## cmpw__SDN__hl__SDN__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00010  10010  10001  10011  "
+
+## delay__CDN__hl__Q__hl__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 10001  00000  "
+
+## delay__CP__lh__Q__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00110  10110  11111  "
+
+## delay__CP__lh__Q__hl__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 10001  10011  11010  "
+
+## delay__SDN__hl__Q__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00010  10010  10001  "
+
+## energy__CDN__lh__Q__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00000  10001  "
+
+## energy__CP__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00000  01000  "
+
+## energy__CP__hl__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 01000  00000  "
+
+## energy__D__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00000  00100  "
+
+## energy__D__hl__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00100  00000  "
+
+## energy__SDN__lh__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00000  00010  "
+
+## energy__SDN__hl__ACQ_1
+append vectors " {pins { CDN CP D SDN } { Q }} 00010  00000  "
+
+return $vectors

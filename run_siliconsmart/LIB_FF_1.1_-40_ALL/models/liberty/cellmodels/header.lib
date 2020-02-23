@@ -1,0 +1,5509 @@
+
+library(tsmc65bc) { 
+  technology(cmos);
+  delay_model : table_lookup ; 
+  date : "Mon Aug 28 22:18:53 CST 2006 " ; 
+  comment : "Copyright TSMC" ; 
+  revision : 121 ; 
+  simulation : true ; 
+  nom_process : 1 ; 
+  nom_temperature : -40 ; 
+  nom_voltage : 1.1 ; 
+
+  operating_conditions("BCCOM") { 
+    process : 1 ; 
+    temperature : -40 ; 
+    voltage : 1.1 ; 
+    tree_type : "balanced_tree" ; 
+  }
+  default_operating_conditions : BCCOM ; 
+  capacitive_load_unit(1,pf);
+  voltage_unit : "1V" ; 
+  current_unit : "1mA" ; 
+  time_unit : "1ns" ; 
+  pulling_resistance_unit : "1kohm" ; 
+  define_cell_area(pad_drivers,pad_driver_sites);
+  define_cell_area(bond_pads,pad_slots);
+  library_features(report_delay_calculation);
+  default_leakage_power_density : 0.0 ; 
+  default_fanout_load : 1 ; 
+
+  input_voltage(cmos) { 
+    vil : 0.3 * VDD ; 
+    vih : 0.7 * VDD ; 
+    vimin : -0.5 ; 
+    vimax : VDD + 0.5 ; 
+  }
+
+  input_voltage(cmos_schmitt) { 
+    vil : 0.3 * VDD ; 
+    vih : 0.7 * VDD ; 
+    vimin : -0.5 ; 
+    vimax : VDD + 0.5 ; 
+  }
+
+  input_voltage(schmitt) { 
+    vil : 0.3 * VDD ; 
+    vih : 0.7 * VDD ; 
+    vimin : -0.5 ; 
+    vimax : VDD + 0.5 ; 
+  }
+
+  input_voltage(ttl) { 
+    vil : 0.8 ; 
+    vih : 2.0 ; 
+    vimin : -0.5 ; 
+    vimax : VDD + 0.5 ; 
+  }
+
+  input_voltage(ttl_schmitt) { 
+    vil : 0.8 ; 
+    vih : 2.0 ; 
+    vimin : -0.5 ; 
+    vimax : VDD + 0.5 ; 
+  }
+
+  input_voltage(pci) { 
+    vil : 0.8 ; 
+    vih : 2.0 ; 
+    vimin : -0.5 ; 
+    vimax : VDD + 0.5 ; 
+  }
+
+  output_voltage(cmos) { 
+    vol : 0.3 * VDD ; 
+    voh : 0.7 * VDD ; 
+    vomin : -0.5 ; 
+    vomax : VDD + 0.5 ; 
+  }
+
+  output_voltage(cmos_schmitt) { 
+    vol : 0.3 * VDD ; 
+    voh : 0.7 * VDD ; 
+    vomin : -0.5 ; 
+    vomax : VDD + 0.5 ; 
+  }
+
+  output_voltage(schmitt) { 
+    vol : 0.3 * VDD ; 
+    voh : 0.7 * VDD ; 
+    vomin : -0.5 ; 
+    vomax : VDD + 0.5 ; 
+  }
+
+  output_voltage(ttl) { 
+    vol : 0.8 ; 
+    voh : 2.0 ; 
+    vomin : -0.5 ; 
+    vomax : VDD + 0.5 ; 
+  }
+
+  output_voltage(ttl_schmitt) { 
+    vol : 0.8 ; 
+    voh : 2.0 ; 
+    vomin : -0.5 ; 
+    vomax : VDD + 0.5 ; 
+  }
+
+  output_voltage(pci) { 
+    vol : 0.8 ; 
+    voh : 2.0 ; 
+    vomin : -0.5 ; 
+    vomax : VDD + 0.5 ; 
+  }
+
+  wire_load("ZeroWireload") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0 ; 
+    fanout_length(1,0);
+    fanout_length(2,0);
+    fanout_length(3,0);
+    fanout_length(4,0);
+    fanout_length(5,0);
+    fanout_length(6,0);
+    fanout_length(7,0);
+    fanout_length(8,0);
+    fanout_length(9,0);
+    fanout_length(10,0);
+    fanout_length(11,0);
+    fanout_length(12,0);
+    fanout_length(13,0);
+    fanout_length(14,0);
+    fanout_length(15,0);
+    fanout_length(16,0);
+    fanout_length(17,0);
+    fanout_length(18,0);
+    fanout_length(19,0);
+    fanout_length(20,0);
+  }
+
+  wire_load_selection(WireAreaForZero) { 
+    wire_load_from_area(0, 1096634, "ZeroWireload");
+  }
+
+  wire_load("TSMC8K_Lowk_Conservative") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0010 ; 
+    fanout_length(1,0.0011);
+    fanout_length(2,0.0019);
+    fanout_length(3,0.0029);
+    fanout_length(4,0.0040);
+    fanout_length(5,0.0053);
+    fanout_length(6,0.0066);
+    fanout_length(7,0.0076);
+    fanout_length(8,0.0088);
+    fanout_length(9,0.0099);
+    fanout_length(10,0.0100);
+  }
+
+  wire_load("TSMC16K_Lowk_Conservative") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0011 ; 
+    fanout_length(1,0.0011);
+    fanout_length(2,0.0020);
+    fanout_length(3,0.0031);
+    fanout_length(4,0.0043);
+    fanout_length(5,0.0057);
+    fanout_length(6,0.0070);
+    fanout_length(7,0.0082);
+    fanout_length(8,0.0095);
+    fanout_length(9,0.0107);
+    fanout_length(10,0.0108);
+  }
+
+  wire_load("TSMC32K_Lowk_Conservative") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0012 ; 
+    fanout_length(1,0.0011);
+    fanout_length(2,0.0022);
+    fanout_length(3,0.0035);
+    fanout_length(4,0.0048);
+    fanout_length(5,0.0064);
+    fanout_length(6,0.0079);
+    fanout_length(7,0.0093);
+    fanout_length(8,0.0108);
+    fanout_length(9,0.0121);
+    fanout_length(10,0.0122);
+  }
+
+  wire_load("TSMC64K_Lowk_Conservative") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0015 ; 
+    fanout_length(1,0.0011);
+    fanout_length(2,0.0026);
+    fanout_length(3,0.0041);
+    fanout_length(4,0.0057);
+    fanout_length(5,0.0077);
+    fanout_length(6,0.0096);
+    fanout_length(7,0.0113);
+    fanout_length(8,0.0130);
+    fanout_length(9,0.0147);
+    fanout_length(10,0.0148);
+  }
+
+  wire_load("TSMC128K_Lowk_Conservative") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0020 ; 
+    fanout_length(1,0.0012);
+    fanout_length(2,0.0031);
+    fanout_length(3,0.0052);
+    fanout_length(4,0.0073);
+    fanout_length(5,0.0098);
+    fanout_length(6,0.0123);
+    fanout_length(7,0.0144);
+    fanout_length(8,0.0167);
+    fanout_length(9,0.0188);
+    fanout_length(10,0.0189);
+  }
+
+  wire_load("TSMC256K_Lowk_Conservative") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0030 ; 
+    fanout_length(1,0.0012);
+    fanout_length(2,0.0043);
+    fanout_length(3,0.0075);
+    fanout_length(4,0.0107);
+    fanout_length(5,0.0145);
+    fanout_length(6,0.0184);
+    fanout_length(7,0.0216);
+    fanout_length(8,0.0252);
+    fanout_length(9,0.0284);
+    fanout_length(10,0.0286);
+  }
+
+  wire_load("TSMC512K_Lowk_Conservative") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0052 ; 
+    fanout_length(1,0.0013);
+    fanout_length(2,0.0068);
+    fanout_length(3,0.0122);
+    fanout_length(4,0.0177);
+    fanout_length(5,0.0241);
+    fanout_length(6,0.0305);
+    fanout_length(7,0.0359);
+    fanout_length(8,0.0420);
+    fanout_length(9,0.0475);
+    fanout_length(10,0.0478);
+  }
+
+  wire_load_selection(WireAreaLowkCon) { 
+    wire_load_from_area(0, 17134, "TSMC8K_Lowk_Conservative");
+    wire_load_from_area(17134, 38552, "TSMC16K_Lowk_Conservative");
+    wire_load_from_area(38552, 80438, "TSMC32K_Lowk_Conservative");
+    wire_load_from_area(80438, 154213, "TSMC64K_Lowk_Conservative");
+    wire_load_from_area(154213, 274158, "TSMC128K_Lowk_Conservative");
+    wire_load_from_area(274158, 548317, "TSMC256K_Lowk_Conservative");
+    wire_load_from_area(548317, 1096634, "TSMC512K_Lowk_Conservative");
+  }
+
+  wire_load("TSMC8K_Lowk_Aggresive") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0007 ; 
+    fanout_length(1,0.0006);
+    fanout_length(2,0.0013);
+    fanout_length(3,0.0021);
+    fanout_length(4,0.0029);
+    fanout_length(5,0.0038);
+    fanout_length(6,0.0047);
+    fanout_length(7,0.0055);
+    fanout_length(8,0.0064);
+    fanout_length(9,0.0072);
+    fanout_length(10,0.0073);
+  }
+
+  wire_load("TSMC16K_Lowk_Aggresive") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0008 ; 
+    fanout_length(1,0.0006);
+    fanout_length(2,0.0013);
+    fanout_length(3,0.0021);
+    fanout_length(4,0.0029);
+    fanout_length(5,0.0039);
+    fanout_length(6,0.0049);
+    fanout_length(7,0.0058);
+    fanout_length(8,0.0067);
+    fanout_length(9,0.0075);
+    fanout_length(10,0.0076);
+  }
+
+  wire_load("TSMC32K_Lowk_Aggresive") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0008 ; 
+    fanout_length(1,0.0006);
+    fanout_length(2,0.0014);
+    fanout_length(3,0.0022);
+    fanout_length(4,0.0031);
+    fanout_length(5,0.0042);
+    fanout_length(6,0.0051);
+    fanout_length(7,0.0061);
+    fanout_length(8,0.0071);
+    fanout_length(9,0.0080);
+    fanout_length(10,0.0081);
+  }
+
+  wire_load("TSMC64K_Lowk_Aggresive") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0009 ; 
+    fanout_length(1,0.0006);
+    fanout_length(2,0.0015);
+    fanout_length(3,0.0025);
+    fanout_length(4,0.0034);
+    fanout_length(5,0.0046);
+    fanout_length(6,0.0057);
+    fanout_length(7,0.0067);
+    fanout_length(8,0.0078);
+    fanout_length(9,0.0088);
+    fanout_length(10,0.0089);
+  }
+
+  wire_load("TSMC128K_Lowk_Aggresive") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0011 ; 
+    fanout_length(1,0.0006);
+    fanout_length(2,0.0016);
+    fanout_length(3,0.0028);
+    fanout_length(4,0.0040);
+    fanout_length(5,0.0052);
+    fanout_length(6,0.0066);
+    fanout_length(7,0.0077);
+    fanout_length(8,0.0090);
+    fanout_length(9,0.0101);
+    fanout_length(10,0.0102);
+  }
+
+  wire_load("TSMC256K_Lowk_Aggresive") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0014 ; 
+    fanout_length(1,0.0006);
+    fanout_length(2,0.0020);
+    fanout_length(3,0.0035);
+    fanout_length(4,0.0050);
+    fanout_length(5,0.0068);
+    fanout_length(6,0.0086);
+    fanout_length(7,0.0101);
+    fanout_length(8,0.0118);
+    fanout_length(9,0.0133);
+    fanout_length(10,0.0134);
+  }
+
+  wire_load("TSMC512K_Lowk_Aggresive") { 
+    resistance : 0.00001 ; 
+    capacitance : 1 ; 
+    area : 0 ; 
+    slope : 0.0022 ; 
+    fanout_length(1,0.0006);
+    fanout_length(2,0.0028);
+    fanout_length(3,0.0050);
+    fanout_length(4,0.0073);
+    fanout_length(5,0.0099);
+    fanout_length(6,0.0126);
+    fanout_length(7,0.0148);
+    fanout_length(8,0.0173);
+    fanout_length(9,0.0195);
+    fanout_length(10,0.0205);
+  }
+
+  wire_load_selection(WireAreaLowkAgr) { 
+    wire_load_from_area(0, 17134, "TSMC8K_Lowk_Aggresive");
+    wire_load_from_area(17134, 38552, "TSMC16K_Lowk_Aggresive");
+    wire_load_from_area(38552, 80438, "TSMC32K_Lowk_Aggresive");
+    wire_load_from_area(80438, 154213, "TSMC64K_Lowk_Aggresive");
+    wire_load_from_area(154213, 274158, "TSMC128K_Lowk_Aggresive");
+    wire_load_from_area(274158, 548317, "TSMC256K_Lowk_Aggresive");
+    wire_load_from_area(548317, 1096634, "TSMC512K_Lowk_Aggresive");
+  }
+  default_wire_load_selection : "WireAreaForZero" ; 
+  default_wire_load : "ZeroWireload" ; 
+  default_wire_load_mode : segmented ; 
+  in_place_swap_mode : match_footprint ; 
+  default_max_transition : 0.7088 ; 
+  default_inout_pin_cap : 0.0012 ; 
+  default_input_pin_cap : 0.0012 ; 
+  default_output_pin_cap : 0.0 ; 
+  slew_lower_threshold_pct_rise : 30.00 ; 
+  slew_upper_threshold_pct_rise : 70.00 ; 
+  slew_derate_from_library : 0.50 ; 
+  input_threshold_pct_fall : 50.00 ; 
+  output_threshold_pct_fall : 50.00 ; 
+  input_threshold_pct_rise : 50.00 ; 
+  output_threshold_pct_rise : 50.00 ; 
+  slew_lower_threshold_pct_fall : 30.00 ; 
+  slew_upper_threshold_pct_fall : 70.00 ; 
+  /*****************************************/
+  /*    Please hand edit power model ! */
+  /*
+       Units for internal energy table must be (V**2) * C
+       for this example Internal power = (1v)**2 * 1 pf =  1pJoules
+ 
+       The # displayed by Design power in report_power command
+       is V**2 * C * (1/time_unit) for this example is 1 mW
+    */
+  /*********************************************/
+  /* Added for DesignPower (Power Estimation). */
+  leakage_power_unit : 1nW ; 
+  default_cell_leakage_power : 0 ; 
+  /*****************************************/
+  /********************************************************************/
+  /*    Support table template from CHEETAH */
+  /********************************************************************/
+
+  lu_table_template(delay_template_7x1) { 
+    variable_1 : input_net_transition ; 
+    index_1("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0");
+  }
+
+  lu_table_template(delay_template_7x7) { 
+    variable_1 : input_net_transition ; 
+    variable_2 : total_output_net_capacitance ; 
+    index_1("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0");
+    index_2("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0");
+  }
+
+  lu_table_template(delay_template_8x8) { 
+    variable_1 : input_net_transition ; 
+    variable_2 : total_output_net_capacitance ; 
+    index_1("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0, 1007.0");
+    index_2("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0, 1007.0");
+  }
+
+  power_lut_template(energy_template_7x7) { 
+    variable_1 : input_transition_time ; 
+    variable_2 : total_output_net_capacitance ; 
+    index_1("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0");
+    index_2("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0");
+  }
+
+  power_lut_template(energy_template_8x8) { 
+    variable_1 : input_transition_time ; 
+    variable_2 : total_output_net_capacitance ; 
+    index_1("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0, 1007.0");
+    index_2("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0, 1007.0");
+  }
+
+  lu_table_template(hold_template_3x3) { 
+    variable_1 : related_pin_transition ; 
+    variable_2 : constrained_pin_transition ; 
+    index_1("1000.0, 1001.0, 1002.0");
+    index_2("1000.0, 1001.0, 1002.0");
+  }
+
+  power_lut_template(passive_energy_template_7x1) { 
+    variable_1 : input_transition_time ; 
+    index_1("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0");
+  }
+
+  power_lut_template(passive_energy_template_8x1) { 
+    variable_1 : input_transition_time ; 
+    index_1("1000.0, 1001.0, 1002.0, 1003.0, 1004.0, 1005.0, 1006.0, 1007.0");
+  }
+
+  lu_table_template(recovery_template_3x3) { 
+    variable_1 : related_pin_transition ; 
+    variable_2 : constrained_pin_transition ; 
+    index_1("1000.0, 1001.0, 1002.0");
+    index_2("1000.0, 1001.0, 1002.0");
+  }
+
+  lu_table_template(removal_template_3x3) { 
+    variable_1 : related_pin_transition ; 
+    variable_2 : constrained_pin_transition ; 
+    index_1("1000.0, 1001.0, 1002.0");
+    index_2("1000.0, 1001.0, 1002.0");
+  }
+
+  lu_table_template(setup_template_3x3) { 
+    variable_1 : related_pin_transition ; 
+    variable_2 : constrained_pin_transition ; 
+    index_1("1000.0, 1001.0, 1002.0");
+    index_2("1000.0, 1001.0, 1002.0");
+  }
+  /* -------------- *
+ * Design : AN2D0 *
+ * -------------- */
+
+  cell(AN2D0) { 
+  }
+  /* -------------- *
+ * Design : AN2D1 *
+ * -------------- */
+
+  cell(AN2D1) { 
+  }
+  /* -------------- *
+ * Design : AN2D2 *
+ * -------------- */
+
+  cell(AN2D2) { 
+  }
+  /* -------------- *
+ * Design : AN2D4 *
+ * -------------- */
+
+  cell(AN2D4) { 
+  }
+  /* -------------- *
+ * Design : AN2D8 *
+ * -------------- */
+
+  cell(AN2D8) { 
+  }
+  /* --------------- *
+ * Design : AN2XD1 *
+ * --------------- */
+
+  cell(AN2XD1) { 
+  }
+  /* -------------- *
+ * Design : AN3D0 *
+ * -------------- */
+
+  cell(AN3D0) { 
+  }
+  /* -------------- *
+ * Design : AN3D1 *
+ * -------------- */
+
+  cell(AN3D1) { 
+  }
+  /* -------------- *
+ * Design : AN3D2 *
+ * -------------- */
+
+  cell(AN3D2) { 
+  }
+  /* -------------- *
+ * Design : AN3D4 *
+ * -------------- */
+
+  cell(AN3D4) { 
+  }
+  /* -------------- *
+ * Design : AN3D8 *
+ * -------------- */
+
+  cell(AN3D8) { 
+  }
+  /* --------------- *
+ * Design : AN3XD1 *
+ * --------------- */
+
+  cell(AN3XD1) { 
+  }
+  /* -------------- *
+ * Design : AN4D0 *
+ * -------------- */
+
+  cell(AN4D0) { 
+  }
+  /* -------------- *
+ * Design : AN4D1 *
+ * -------------- */
+
+  cell(AN4D1) { 
+  }
+  /* -------------- *
+ * Design : AN4D2 *
+ * -------------- */
+
+  cell(AN4D2) { 
+  }
+  /* -------------- *
+ * Design : AN4D4 *
+ * -------------- */
+
+  cell(AN4D4) { 
+  }
+  /* -------------- *
+ * Design : AN4D8 *
+ * -------------- */
+
+  cell(AN4D8) { 
+  }
+  /* --------------- *
+ * Design : AN4XD1 *
+ * --------------- */
+
+  cell(AN4XD1) { 
+  }
+  /* ---------------- *
+ * Design : ANTENNA *
+ * ---------------- */
+
+  cell(ANTENNA) { 
+  }
+  /* ---------------- *
+ * Design : AO211D0 *
+ * ---------------- */
+
+  cell(AO211D0) { 
+  }
+  /* ---------------- *
+ * Design : AO211D1 *
+ * ---------------- */
+
+  cell(AO211D1) { 
+  }
+  /* ---------------- *
+ * Design : AO211D2 *
+ * ---------------- */
+
+  cell(AO211D2) { 
+  }
+  /* ---------------- *
+ * Design : AO211D4 *
+ * ---------------- */
+
+  cell(AO211D4) { 
+  }
+  /* --------------- *
+ * Design : AO21D0 *
+ * --------------- */
+
+  cell(AO21D0) { 
+  }
+  /* --------------- *
+ * Design : AO21D1 *
+ * --------------- */
+
+  cell(AO21D1) { 
+  }
+  /* --------------- *
+ * Design : AO21D2 *
+ * --------------- */
+
+  cell(AO21D2) { 
+  }
+  /* --------------- *
+ * Design : AO21D4 *
+ * --------------- */
+
+  cell(AO21D4) { 
+  }
+  /* ---------------- *
+ * Design : AO221D0 *
+ * ---------------- */
+
+  cell(AO221D0) { 
+  }
+  /* ---------------- *
+ * Design : AO221D1 *
+ * ---------------- */
+
+  cell(AO221D1) { 
+  }
+  /* ---------------- *
+ * Design : AO221D2 *
+ * ---------------- */
+
+  cell(AO221D2) { 
+  }
+  /* ---------------- *
+ * Design : AO221D4 *
+ * ---------------- */
+
+  cell(AO221D4) { 
+  }
+  /* ---------------- *
+ * Design : AO222D0 *
+ * ---------------- */
+
+  cell(AO222D0) { 
+  }
+  /* ---------------- *
+ * Design : AO222D1 *
+ * ---------------- */
+
+  cell(AO222D1) { 
+  }
+  /* ---------------- *
+ * Design : AO222D2 *
+ * ---------------- */
+
+  cell(AO222D2) { 
+  }
+  /* ---------------- *
+ * Design : AO222D4 *
+ * ---------------- */
+
+  cell(AO222D4) { 
+  }
+  /* --------------- *
+ * Design : AO22D0 *
+ * --------------- */
+
+  cell(AO22D0) { 
+  }
+  /* --------------- *
+ * Design : AO22D1 *
+ * --------------- */
+
+  cell(AO22D1) { 
+  }
+  /* --------------- *
+ * Design : AO22D2 *
+ * --------------- */
+
+  cell(AO22D2) { 
+  }
+  /* --------------- *
+ * Design : AO22D4 *
+ * --------------- */
+
+  cell(AO22D4) { 
+  }
+  /* --------------- *
+ * Design : AO31D0 *
+ * --------------- */
+
+  cell(AO31D0) { 
+  }
+  /* --------------- *
+ * Design : AO31D1 *
+ * --------------- */
+
+  cell(AO31D1) { 
+  }
+  /* --------------- *
+ * Design : AO31D2 *
+ * --------------- */
+
+  cell(AO31D2) { 
+  }
+  /* --------------- *
+ * Design : AO31D4 *
+ * --------------- */
+
+  cell(AO31D4) { 
+  }
+  /* --------------- *
+ * Design : AO32D0 *
+ * --------------- */
+
+  cell(AO32D0) { 
+  }
+  /* --------------- *
+ * Design : AO32D1 *
+ * --------------- */
+
+  cell(AO32D1) { 
+  }
+  /* --------------- *
+ * Design : AO32D2 *
+ * --------------- */
+
+  cell(AO32D2) { 
+  }
+  /* --------------- *
+ * Design : AO32D4 *
+ * --------------- */
+
+  cell(AO32D4) { 
+  }
+  /* --------------- *
+ * Design : AO33D0 *
+ * --------------- */
+
+  cell(AO33D0) { 
+  }
+  /* --------------- *
+ * Design : AO33D1 *
+ * --------------- */
+
+  cell(AO33D1) { 
+  }
+  /* --------------- *
+ * Design : AO33D2 *
+ * --------------- */
+
+  cell(AO33D2) { 
+  }
+  /* --------------- *
+ * Design : AO33D4 *
+ * --------------- */
+
+  cell(AO33D4) { 
+  }
+  /* ----------------- *
+ * Design : AOI211D0 *
+ * ----------------- */
+
+  cell(AOI211D0) { 
+  }
+  /* ----------------- *
+ * Design : AOI211D1 *
+ * ----------------- */
+
+  cell(AOI211D1) { 
+  }
+  /* ----------------- *
+ * Design : AOI211D2 *
+ * ----------------- */
+
+  cell(AOI211D2) { 
+  }
+  /* ----------------- *
+ * Design : AOI211D4 *
+ * ----------------- */
+
+  cell(AOI211D4) { 
+  }
+  /* ------------------ *
+ * Design : AOI211XD0 *
+ * ------------------ */
+
+  cell(AOI211XD0) { 
+  }
+  /* ------------------ *
+ * Design : AOI211XD1 *
+ * ------------------ */
+
+  cell(AOI211XD1) { 
+  }
+  /* ------------------ *
+ * Design : AOI211XD2 *
+ * ------------------ */
+
+  cell(AOI211XD2) { 
+  }
+  /* ------------------ *
+ * Design : AOI211XD4 *
+ * ------------------ */
+
+  cell(AOI211XD4) { 
+  }
+  /* ---------------- *
+ * Design : AOI21D0 *
+ * ---------------- */
+
+  cell(AOI21D0) { 
+  }
+  /* ---------------- *
+ * Design : AOI21D1 *
+ * ---------------- */
+
+  cell(AOI21D1) { 
+  }
+  /* ---------------- *
+ * Design : AOI21D2 *
+ * ---------------- */
+
+  cell(AOI21D2) { 
+  }
+  /* ---------------- *
+ * Design : AOI21D4 *
+ * ---------------- */
+
+  cell(AOI21D4) { 
+  }
+  /* ----------------- *
+ * Design : AOI221D0 *
+ * ----------------- */
+
+  cell(AOI221D0) { 
+  }
+  /* ----------------- *
+ * Design : AOI221D1 *
+ * ----------------- */
+
+  cell(AOI221D1) { 
+  }
+  /* ----------------- *
+ * Design : AOI221D2 *
+ * ----------------- */
+
+  cell(AOI221D2) { 
+  }
+  /* ----------------- *
+ * Design : AOI221D4 *
+ * ----------------- */
+
+  cell(AOI221D4) { 
+  }
+  /* ------------------ *
+ * Design : AOI221XD4 *
+ * ------------------ */
+
+  cell(AOI221XD4) { 
+  }
+  /* ----------------- *
+ * Design : AOI222D0 *
+ * ----------------- */
+
+  cell(AOI222D0) { 
+  }
+  /* ----------------- *
+ * Design : AOI222D1 *
+ * ----------------- */
+
+  cell(AOI222D1) { 
+  }
+  /* ----------------- *
+ * Design : AOI222D2 *
+ * ----------------- */
+
+  cell(AOI222D2) { 
+  }
+  /* ----------------- *
+ * Design : AOI222D4 *
+ * ----------------- */
+
+  cell(AOI222D4) { 
+  }
+  /* ------------------ *
+ * Design : AOI222XD4 *
+ * ------------------ */
+
+  cell(AOI222XD4) { 
+  }
+  /* ---------------- *
+ * Design : AOI22D0 *
+ * ---------------- */
+
+  cell(AOI22D0) { 
+  }
+  /* ---------------- *
+ * Design : AOI22D1 *
+ * ---------------- */
+
+  cell(AOI22D1) { 
+  }
+  /* ---------------- *
+ * Design : AOI22D2 *
+ * ---------------- */
+
+  cell(AOI22D2) { 
+  }
+  /* ---------------- *
+ * Design : AOI22D4 *
+ * ---------------- */
+
+  cell(AOI22D4) { 
+  }
+  /* ---------------- *
+ * Design : AOI31D0 *
+ * ---------------- */
+
+  cell(AOI31D0) { 
+  }
+  /* ---------------- *
+ * Design : AOI31D1 *
+ * ---------------- */
+
+  cell(AOI31D1) { 
+  }
+  /* ---------------- *
+ * Design : AOI31D2 *
+ * ---------------- */
+
+  cell(AOI31D2) { 
+  }
+  /* ---------------- *
+ * Design : AOI31D4 *
+ * ---------------- */
+
+  cell(AOI31D4) { 
+  }
+  /* ---------------- *
+ * Design : AOI32D0 *
+ * ---------------- */
+
+  cell(AOI32D0) { 
+  }
+  /* ---------------- *
+ * Design : AOI32D1 *
+ * ---------------- */
+
+  cell(AOI32D1) { 
+  }
+  /* ---------------- *
+ * Design : AOI32D2 *
+ * ---------------- */
+
+  cell(AOI32D2) { 
+  }
+  /* ---------------- *
+ * Design : AOI32D4 *
+ * ---------------- */
+
+  cell(AOI32D4) { 
+  }
+  /* ----------------- *
+ * Design : AOI32XD4 *
+ * ----------------- */
+
+  cell(AOI32XD4) { 
+  }
+  /* ---------------- *
+ * Design : AOI33D0 *
+ * ---------------- */
+
+  cell(AOI33D0) { 
+  }
+  /* ---------------- *
+ * Design : AOI33D1 *
+ * ---------------- */
+
+  cell(AOI33D1) { 
+  }
+  /* ---------------- *
+ * Design : AOI33D2 *
+ * ---------------- */
+
+  cell(AOI33D2) { 
+  }
+  /* ---------------- *
+ * Design : AOI33D4 *
+ * ---------------- */
+
+  cell(AOI33D4) { 
+  }
+  /* ----------------- *
+ * Design : AOI33XD4 *
+ * ----------------- */
+
+  cell(AOI33XD4) { 
+  }
+  /* --------------- *
+ * Design : BENCD1 *
+ * --------------- */
+
+  cell(BENCD1) { 
+  }
+  /* --------------- *
+ * Design : BENCD2 *
+ * --------------- */
+
+  cell(BENCD2) { 
+  }
+  /* --------------- *
+ * Design : BENCD4 *
+ * --------------- */
+
+  cell(BENCD4) { 
+  }
+  /* ------------ *
+ * Design : BHD *
+ * ------------ */
+
+  cell(BHD) { 
+  }
+  /* -------------- *
+ * Design : BMLD1 *
+ * -------------- */
+
+  cell(BMLD1) { 
+  }
+  /* -------------- *
+ * Design : BMLD2 *
+ * -------------- */
+
+  cell(BMLD2) { 
+  }
+  /* -------------- *
+ * Design : BMLD4 *
+ * -------------- */
+
+  cell(BMLD4) { 
+  }
+  /* --------------- *
+ * Design : BUFFD0 *
+ * --------------- */
+
+  cell(BUFFD0) { 
+  }
+  /* --------------- *
+ * Design : BUFFD1 *
+ * --------------- */
+
+  cell(BUFFD1) { 
+  }
+  /* --------------- *
+ * Design : BUFFD2 *
+ * --------------- */
+
+  cell(BUFFD2) { 
+  }
+  /* --------------- *
+ * Design : BUFFD3 *
+ * --------------- */
+
+  cell(BUFFD3) { 
+  }
+  /* --------------- *
+ * Design : BUFFD4 *
+ * --------------- */
+
+  cell(BUFFD4) { 
+  }
+  /* --------------- *
+ * Design : BUFFD6 *
+ * --------------- */
+
+  cell(BUFFD6) { 
+  }
+  /* --------------- *
+ * Design : BUFFD8 *
+ * --------------- */
+
+  cell(BUFFD8) { 
+  }
+  /* ---------------- *
+ * Design : BUFFD12 *
+ * ---------------- */
+
+  cell(BUFFD12) { 
+  }
+  /* ---------------- *
+ * Design : BUFFD16 *
+ * ---------------- */
+
+  cell(BUFFD16) { 
+  }
+  /* ---------------- *
+ * Design : BUFFD20 *
+ * ---------------- */
+
+  cell(BUFFD20) { 
+  }
+  /* ---------------- *
+ * Design : BUFFD24 *
+ * ---------------- */
+
+  cell(BUFFD24) { 
+  }
+  /* --------------- *
+ * Design : BUFTD0 *
+ * --------------- */
+
+  cell(BUFTD0) { 
+  }
+  /* --------------- *
+ * Design : BUFTD1 *
+ * --------------- */
+
+  cell(BUFTD1) { 
+  }
+  /* --------------- *
+ * Design : BUFTD2 *
+ * --------------- */
+
+  cell(BUFTD2) { 
+  }
+  /* --------------- *
+ * Design : BUFTD3 *
+ * --------------- */
+
+  cell(BUFTD3) { 
+  }
+  /* --------------- *
+ * Design : BUFTD4 *
+ * --------------- */
+
+  cell(BUFTD4) { 
+  }
+  /* --------------- *
+ * Design : BUFTD6 *
+ * --------------- */
+
+  cell(BUFTD6) { 
+  }
+  /* --------------- *
+ * Design : BUFTD8 *
+ * --------------- */
+
+  cell(BUFTD8) { 
+  }
+  /* ---------------- *
+ * Design : BUFTD12 *
+ * ---------------- */
+
+  cell(BUFTD12) { 
+  }
+  /* ---------------- *
+ * Design : BUFTD16 *
+ * ---------------- */
+
+  cell(BUFTD16) { 
+  }
+  /* ---------------- *
+ * Design : BUFTD20 *
+ * ---------------- */
+
+  cell(BUFTD20) { 
+  }
+  /* ---------------- *
+ * Design : BUFTD24 *
+ * ---------------- */
+
+  cell(BUFTD24) { 
+  }
+  /* ---------------- *
+ * Design : CKAN2D0 *
+ * ---------------- */
+
+  cell(CKAN2D0) { 
+  }
+  /* ---------------- *
+ * Design : CKAN2D1 *
+ * ---------------- */
+
+  cell(CKAN2D1) { 
+  }
+  /* ---------------- *
+ * Design : CKAN2D2 *
+ * ---------------- */
+
+  cell(CKAN2D2) { 
+  }
+  /* ---------------- *
+ * Design : CKAN2D4 *
+ * ---------------- */
+
+  cell(CKAN2D4) { 
+  }
+  /* ---------------- *
+ * Design : CKAN2D8 *
+ * ---------------- */
+
+  cell(CKAN2D8) { 
+  }
+  /* -------------- *
+ * Design : CKBD0 *
+ * -------------- */
+
+  cell(CKBD0) { 
+  }
+  /* -------------- *
+ * Design : CKBD1 *
+ * -------------- */
+
+  cell(CKBD1) { 
+  }
+  /* -------------- *
+ * Design : CKBD2 *
+ * -------------- */
+
+  cell(CKBD2) { 
+  }
+  /* -------------- *
+ * Design : CKBD3 *
+ * -------------- */
+
+  cell(CKBD3) { 
+  }
+  /* -------------- *
+ * Design : CKBD4 *
+ * -------------- */
+
+  cell(CKBD4) { 
+  }
+  /* -------------- *
+ * Design : CKBD6 *
+ * -------------- */
+
+  cell(CKBD6) { 
+  }
+  /* -------------- *
+ * Design : CKBD8 *
+ * -------------- */
+
+  cell(CKBD8) { 
+  }
+  /* --------------- *
+ * Design : CKBD12 *
+ * --------------- */
+
+  cell(CKBD12) { 
+  }
+  /* --------------- *
+ * Design : CKBD16 *
+ * --------------- */
+
+  cell(CKBD16) { 
+  }
+  /* --------------- *
+ * Design : CKBD20 *
+ * --------------- */
+
+  cell(CKBD20) { 
+  }
+  /* --------------- *
+ * Design : CKBD24 *
+ * --------------- */
+
+  cell(CKBD24) { 
+  }
+  /* ---------------- *
+ * Design : CKLHQD1 *
+ * ---------------- */
+
+  cell(CKLHQD1) { 
+  }
+  /* ---------------- *
+ * Design : CKLHQD2 *
+ * ---------------- */
+
+  cell(CKLHQD2) { 
+  }
+  /* ---------------- *
+ * Design : CKLHQD3 *
+ * ---------------- */
+
+  cell(CKLHQD3) { 
+  }
+  /* ---------------- *
+ * Design : CKLHQD4 *
+ * ---------------- */
+
+  cell(CKLHQD4) { 
+  }
+  /* ---------------- *
+ * Design : CKLHQD6 *
+ * ---------------- */
+
+  cell(CKLHQD6) { 
+  }
+  /* ---------------- *
+ * Design : CKLHQD8 *
+ * ---------------- */
+
+  cell(CKLHQD8) { 
+  }
+  /* ----------------- *
+ * Design : CKLHQD12 *
+ * ----------------- */
+
+  cell(CKLHQD12) { 
+  }
+  /* ----------------- *
+ * Design : CKLHQD16 *
+ * ----------------- */
+
+  cell(CKLHQD16) { 
+  }
+  /* ----------------- *
+ * Design : CKLHQD20 *
+ * ----------------- */
+
+  cell(CKLHQD20) { 
+  }
+  /* ----------------- *
+ * Design : CKLHQD24 *
+ * ----------------- */
+
+  cell(CKLHQD24) { 
+  }
+  /* ---------------- *
+ * Design : CKLNQD1 *
+ * ---------------- */
+
+  cell(CKLNQD1) { 
+  }
+  /* ---------------- *
+ * Design : CKLNQD2 *
+ * ---------------- */
+
+  cell(CKLNQD2) { 
+  }
+  /* ---------------- *
+ * Design : CKLNQD3 *
+ * ---------------- */
+
+  cell(CKLNQD3) { 
+  }
+  /* ---------------- *
+ * Design : CKLNQD4 *
+ * ---------------- */
+
+  cell(CKLNQD4) { 
+  }
+  /* ---------------- *
+ * Design : CKLNQD6 *
+ * ---------------- */
+
+  cell(CKLNQD6) { 
+  }
+  /* ---------------- *
+ * Design : CKLNQD8 *
+ * ---------------- */
+
+  cell(CKLNQD8) { 
+  }
+  /* ----------------- *
+ * Design : CKLNQD12 *
+ * ----------------- */
+
+  cell(CKLNQD12) { 
+  }
+  /* ----------------- *
+ * Design : CKLNQD16 *
+ * ----------------- */
+
+  cell(CKLNQD16) { 
+  }
+  /* ----------------- *
+ * Design : CKLNQD20 *
+ * ----------------- */
+
+  cell(CKLNQD20) { 
+  }
+  /* ----------------- *
+ * Design : CKLNQD24 *
+ * ----------------- */
+
+  cell(CKLNQD24) { 
+  }
+  /* ----------------- *
+ * Design : CKMUX2D0 *
+ * ----------------- */
+
+  cell(CKMUX2D0) { 
+  }
+  /* ----------------- *
+ * Design : CKMUX2D1 *
+ * ----------------- */
+
+  cell(CKMUX2D1) { 
+  }
+  /* ----------------- *
+ * Design : CKMUX2D2 *
+ * ----------------- */
+
+  cell(CKMUX2D2) { 
+  }
+  /* ----------------- *
+ * Design : CKMUX2D4 *
+ * ----------------- */
+
+  cell(CKMUX2D4) { 
+  }
+  /* -------------- *
+ * Design : CKND0 *
+ * -------------- */
+
+  cell(CKND0) { 
+  }
+  /* -------------- *
+ * Design : CKND1 *
+ * -------------- */
+
+  cell(CKND1) { 
+  }
+  /* -------------- *
+ * Design : CKND2 *
+ * -------------- */
+
+  cell(CKND2) { 
+  }
+  /* -------------- *
+ * Design : CKND3 *
+ * -------------- */
+
+  cell(CKND3) { 
+  }
+  /* -------------- *
+ * Design : CKND4 *
+ * -------------- */
+
+  cell(CKND4) { 
+  }
+  /* -------------- *
+ * Design : CKND6 *
+ * -------------- */
+
+  cell(CKND6) { 
+  }
+  /* -------------- *
+ * Design : CKND8 *
+ * -------------- */
+
+  cell(CKND8) { 
+  }
+  /* --------------- *
+ * Design : CKND12 *
+ * --------------- */
+
+  cell(CKND12) { 
+  }
+  /* --------------- *
+ * Design : CKND16 *
+ * --------------- */
+
+  cell(CKND16) { 
+  }
+  /* --------------- *
+ * Design : CKND20 *
+ * --------------- */
+
+  cell(CKND20) { 
+  }
+  /* --------------- *
+ * Design : CKND24 *
+ * --------------- */
+
+  cell(CKND24) { 
+  }
+  /* ---------------- *
+ * Design : CKND2D0 *
+ * ---------------- */
+
+  cell(CKND2D0) { 
+  }
+  /* ---------------- *
+ * Design : CKND2D1 *
+ * ---------------- */
+
+  cell(CKND2D1) { 
+  }
+  /* ---------------- *
+ * Design : CKND2D2 *
+ * ---------------- */
+
+  cell(CKND2D2) { 
+  }
+  /* ---------------- *
+ * Design : CKND2D3 *
+ * ---------------- */
+
+  cell(CKND2D3) { 
+  }
+  /* ---------------- *
+ * Design : CKND2D4 *
+ * ---------------- */
+
+  cell(CKND2D4) { 
+  }
+  /* ---------------- *
+ * Design : CKND2D8 *
+ * ---------------- */
+
+  cell(CKND2D8) { 
+  }
+  /* ----------------- *
+ * Design : CKXOR2D0 *
+ * ----------------- */
+
+  cell(CKXOR2D0) { 
+  }
+  /* ----------------- *
+ * Design : CKXOR2D1 *
+ * ----------------- */
+
+  cell(CKXOR2D1) { 
+  }
+  /* ----------------- *
+ * Design : CKXOR2D2 *
+ * ----------------- */
+
+  cell(CKXOR2D2) { 
+  }
+  /* ----------------- *
+ * Design : CKXOR2D4 *
+ * ----------------- */
+
+  cell(CKXOR2D4) { 
+  }
+  /* ----------------- *
+ * Design : CMPE42D1 *
+ * ----------------- */
+
+  cell(CMPE42D1) { 
+  }
+  /* ----------------- *
+ * Design : CMPE42D2 *
+ * ----------------- */
+
+  cell(CMPE42D2) { 
+  }
+  /* ------------- *
+ * Design : DCAP *
+ * ------------- */
+
+  cell(DCAP) { 
+  }
+  /* end of cell */
+  /* -------------- *
+ * Design : DCAP4 *
+ * -------------- */
+
+  cell(DCAP4) { 
+  }
+  /* end of cell */
+  /* -------------- *
+ * Design : DCAP8 *
+ * -------------- */
+
+  cell(DCAP8) { 
+  }
+  /* end of cell */
+  /* --------------- *
+ * Design : DCAP16 *
+ * --------------- */
+
+  cell(DCAP16) { 
+  }
+  /* end of cell */
+  /* --------------- *
+ * Design : DCAP32 *
+ * --------------- */
+
+  cell(DCAP32) { 
+  }
+  /* end of cell */
+  /* --------------- *
+ * Design : DCAP64 *
+ * --------------- */
+
+  cell(DCAP64) { 
+  }
+  /* end of cell */
+  /* ------------- *
+ * Design : DEL0 *
+ * ------------- */
+
+  cell(DEL0) { 
+  }
+  /* --------------- *
+ * Design : DEL005 *
+ * --------------- */
+
+  cell(DEL005) { 
+  }
+  /* -------------- *
+ * Design : DEL01 *
+ * -------------- */
+
+  cell(DEL01) { 
+  }
+  /* --------------- *
+ * Design : DEL015 *
+ * --------------- */
+
+  cell(DEL015) { 
+  }
+  /* -------------- *
+ * Design : DEL02 *
+ * -------------- */
+
+  cell(DEL02) { 
+  }
+  /* ------------- *
+ * Design : DEL1 *
+ * ------------- */
+
+  cell(DEL1) { 
+  }
+  /* ------------- *
+ * Design : DEL2 *
+ * ------------- */
+
+  cell(DEL2) { 
+  }
+  /* ------------- *
+ * Design : DEL3 *
+ * ------------- */
+
+  cell(DEL3) { 
+  }
+  /* ------------- *
+ * Design : DEL4 *
+ * ------------- */
+
+  cell(DEL4) { 
+  }
+  /* --------------- *
+ * Design : DFCND1 *
+ * --------------- */
+
+  cell(DFCND1) { 
+  }
+  /* --------------- *
+ * Design : DFCND2 *
+ * --------------- */
+
+  cell(DFCND2) { 
+  }
+  /* --------------- *
+ * Design : DFCND4 *
+ * --------------- */
+
+  cell(DFCND4) { 
+  }
+  /* ---------------- *
+ * Design : DFCNQD1 *
+ * ---------------- */
+
+  cell(DFCNQD1) { 
+  }
+  /* ---------------- *
+ * Design : DFCNQD2 *
+ * ---------------- */
+
+  cell(DFCNQD2) { 
+  }
+  /* ---------------- *
+ * Design : DFCNQD4 *
+ * ---------------- */
+
+  cell(DFCNQD4) { 
+  }
+  /* ---------------- *
+ * Design : DFCSND1 *
+ * ---------------- */
+
+  cell(DFCSND1) { 
+  }
+  /* ---------------- *
+ * Design : DFCSND2 *
+ * ---------------- */
+
+  cell(DFCSND2) { 
+  }
+  /* ---------------- *
+ * Design : DFCSND4 *
+ * ---------------- */
+
+  cell(DFCSND4) { 
+  }
+  /* ----------------- *
+ * Design : DFCSNQD1 *
+ * ----------------- */
+
+  cell(DFCSNQD1) { 
+  }
+  /* ----------------- *
+ * Design : DFCSNQD2 *
+ * ----------------- */
+
+  cell(DFCSNQD2) { 
+  }
+  /* ----------------- *
+ * Design : DFCSNQD4 *
+ * ----------------- */
+
+  cell(DFCSNQD4) { 
+  }
+  /* ------------- *
+ * Design : DFD1 *
+ * ------------- */
+
+  cell(DFD1) { 
+  }
+  /* ------------- *
+ * Design : DFD2 *
+ * ------------- */
+
+  cell(DFD2) { 
+  }
+  /* ------------- *
+ * Design : DFD4 *
+ * ------------- */
+
+  cell(DFD4) { 
+  }
+  /* ---------------- *
+ * Design : DFKCND1 *
+ * ---------------- */
+
+  cell(DFKCND1) { 
+  }
+  /* ---------------- *
+ * Design : DFKCND2 *
+ * ---------------- */
+
+  cell(DFKCND2) { 
+  }
+  /* ---------------- *
+ * Design : DFKCND4 *
+ * ---------------- */
+
+  cell(DFKCND4) { 
+  }
+  /* ----------------- *
+ * Design : DFKCNQD1 *
+ * ----------------- */
+
+  cell(DFKCNQD1) { 
+  }
+  /* ----------------- *
+ * Design : DFKCNQD2 *
+ * ----------------- */
+
+  cell(DFKCNQD2) { 
+  }
+  /* ----------------- *
+ * Design : DFKCNQD4 *
+ * ----------------- */
+
+  cell(DFKCNQD4) { 
+  }
+  /* ----------------- *
+ * Design : DFKCSND1 *
+ * ----------------- */
+
+  cell(DFKCSND1) { 
+  }
+  /* ----------------- *
+ * Design : DFKCSND2 *
+ * ----------------- */
+
+  cell(DFKCSND2) { 
+  }
+  /* ----------------- *
+ * Design : DFKCSND4 *
+ * ----------------- */
+
+  cell(DFKCSND4) { 
+  }
+  /* ---------------- *
+ * Design : DFKSND1 *
+ * ---------------- */
+
+  cell(DFKSND1) { 
+  }
+  /* ---------------- *
+ * Design : DFKSND2 *
+ * ---------------- */
+
+  cell(DFKSND2) { 
+  }
+  /* ---------------- *
+ * Design : DFKSND4 *
+ * ---------------- */
+
+  cell(DFKSND4) { 
+  }
+  /* ---------------- *
+ * Design : DFNCND1 *
+ * ---------------- */
+
+  cell(DFNCND1) { 
+  }
+  /* ---------------- *
+ * Design : DFNCND2 *
+ * ---------------- */
+
+  cell(DFNCND2) { 
+  }
+  /* ---------------- *
+ * Design : DFNCND4 *
+ * ---------------- */
+
+  cell(DFNCND4) { 
+  }
+  /* ----------------- *
+ * Design : DFNCSND1 *
+ * ----------------- */
+
+  cell(DFNCSND1) { 
+  }
+  /* ----------------- *
+ * Design : DFNCSND2 *
+ * ----------------- */
+
+  cell(DFNCSND2) { 
+  }
+  /* ----------------- *
+ * Design : DFNCSND4 *
+ * ----------------- */
+
+  cell(DFNCSND4) { 
+  }
+  /* -------------- *
+ * Design : DFND1 *
+ * -------------- */
+
+  cell(DFND1) { 
+  }
+  /* -------------- *
+ * Design : DFND2 *
+ * -------------- */
+
+  cell(DFND2) { 
+  }
+  /* -------------- *
+ * Design : DFND4 *
+ * -------------- */
+
+  cell(DFND4) { 
+  }
+  /* ---------------- *
+ * Design : DFNSND1 *
+ * ---------------- */
+
+  cell(DFNSND1) { 
+  }
+  /* ---------------- *
+ * Design : DFNSND2 *
+ * ---------------- */
+
+  cell(DFNSND2) { 
+  }
+  /* ---------------- *
+ * Design : DFNSND4 *
+ * ---------------- */
+
+  cell(DFNSND4) { 
+  }
+  /* -------------- *
+ * Design : DFQD1 *
+ * -------------- */
+
+  cell(DFQD1) { 
+  }
+  /* -------------- *
+ * Design : DFQD2 *
+ * -------------- */
+
+  cell(DFQD2) { 
+  }
+  /* -------------- *
+ * Design : DFQD4 *
+ * -------------- */
+
+  cell(DFQD4) { 
+  }
+  /* --------------- *
+ * Design : DFSND1 *
+ * --------------- */
+
+  cell(DFSND1) { 
+  }
+  /* --------------- *
+ * Design : DFSND2 *
+ * --------------- */
+
+  cell(DFSND2) { 
+  }
+  /* --------------- *
+ * Design : DFSND4 *
+ * --------------- */
+
+  cell(DFSND4) { 
+  }
+  /* ---------------- *
+ * Design : DFSNQD1 *
+ * ---------------- */
+
+  cell(DFSNQD1) { 
+  }
+  /* ---------------- *
+ * Design : DFSNQD2 *
+ * ---------------- */
+
+  cell(DFSNQD2) { 
+  }
+  /* ---------------- *
+ * Design : DFSNQD4 *
+ * ---------------- */
+
+  cell(DFSNQD4) { 
+  }
+  /* -------------- *
+ * Design : DFXD1 *
+ * -------------- */
+
+  cell(DFXD1) { 
+  }
+  /* -------------- *
+ * Design : DFXD2 *
+ * -------------- */
+
+  cell(DFXD2) { 
+  }
+  /* -------------- *
+ * Design : DFXD4 *
+ * -------------- */
+
+  cell(DFXD4) { 
+  }
+  /* --------------- *
+ * Design : DFXQD1 *
+ * --------------- */
+
+  cell(DFXQD1) { 
+  }
+  /* --------------- *
+ * Design : DFXQD2 *
+ * --------------- */
+
+  cell(DFXQD2) { 
+  }
+  /* --------------- *
+ * Design : DFXQD4 *
+ * --------------- */
+
+  cell(DFXQD4) { 
+  }
+  /* ---------------- *
+ * Design : EDFCND1 *
+ * ---------------- */
+
+  cell(EDFCND1) { 
+  }
+  /* ---------------- *
+ * Design : EDFCND2 *
+ * ---------------- */
+
+  cell(EDFCND2) { 
+  }
+  /* ---------------- *
+ * Design : EDFCND4 *
+ * ---------------- */
+
+  cell(EDFCND4) { 
+  }
+  /* ----------------- *
+ * Design : EDFCNQD1 *
+ * ----------------- */
+
+  cell(EDFCNQD1) { 
+  }
+  /* ----------------- *
+ * Design : EDFCNQD2 *
+ * ----------------- */
+
+  cell(EDFCNQD2) { 
+  }
+  /* ----------------- *
+ * Design : EDFCNQD4 *
+ * ----------------- */
+
+  cell(EDFCNQD4) { 
+  }
+  /* -------------- *
+ * Design : EDFD1 *
+ * -------------- */
+
+  cell(EDFD1) { 
+  }
+  /* -------------- *
+ * Design : EDFD2 *
+ * -------------- */
+
+  cell(EDFD2) { 
+  }
+  /* -------------- *
+ * Design : EDFD4 *
+ * -------------- */
+
+  cell(EDFD4) { 
+  }
+  /* ----------------- *
+ * Design : EDFKCND1 *
+ * ----------------- */
+
+  cell(EDFKCND1) { 
+  }
+  /* ----------------- *
+ * Design : EDFKCND2 *
+ * ----------------- */
+
+  cell(EDFKCND2) { 
+  }
+  /* ----------------- *
+ * Design : EDFKCND4 *
+ * ----------------- */
+
+  cell(EDFKCND4) { 
+  }
+  /* ------------------ *
+ * Design : EDFKCNQD1 *
+ * ------------------ */
+
+  cell(EDFKCNQD1) { 
+  }
+  /* ------------------ *
+ * Design : EDFKCNQD2 *
+ * ------------------ */
+
+  cell(EDFKCNQD2) { 
+  }
+  /* ------------------ *
+ * Design : EDFKCNQD4 *
+ * ------------------ */
+
+  cell(EDFKCNQD4) { 
+  }
+  /* --------------- *
+ * Design : EDFQD1 *
+ * --------------- */
+
+  cell(EDFQD1) { 
+  }
+  /* --------------- *
+ * Design : EDFQD2 *
+ * --------------- */
+
+  cell(EDFQD2) { 
+  }
+  /* --------------- *
+ * Design : EDFQD4 *
+ * --------------- */
+
+  cell(EDFQD4) { 
+  }
+  /* -------------- *
+ * Design : FA1D0 *
+ * -------------- */
+
+  cell(FA1D0) { 
+  }
+  /* -------------- *
+ * Design : FA1D1 *
+ * -------------- */
+
+  cell(FA1D1) { 
+  }
+  /* -------------- *
+ * Design : FA1D2 *
+ * -------------- */
+
+  cell(FA1D2) { 
+  }
+  /* -------------- *
+ * Design : FA1D4 *
+ * -------------- */
+
+  cell(FA1D4) { 
+  }
+  /* ----------------- *
+ * Design : FCICIND1 *
+ * ----------------- */
+
+  cell(FCICIND1) { 
+  }
+  /* ----------------- *
+ * Design : FCICIND2 *
+ * ----------------- */
+
+  cell(FCICIND2) { 
+  }
+  /* ----------------- *
+ * Design : FCICOND1 *
+ * ----------------- */
+
+  cell(FCICOND1) { 
+  }
+  /* ----------------- *
+ * Design : FCICOND2 *
+ * ----------------- */
+
+  cell(FCICOND2) { 
+  }
+  /* ------------------ *
+ * Design : FCSICIND1 *
+ * ------------------ */
+
+  cell(FCSICIND1) { 
+  }
+  /* ------------------ *
+ * Design : FCSICIND2 *
+ * ------------------ */
+
+  cell(FCSICIND2) { 
+  }
+  /* ------------------ *
+ * Design : FCSICOND1 *
+ * ------------------ */
+
+  cell(FCSICOND1) { 
+  }
+  /* ------------------ *
+ * Design : FCSICOND2 *
+ * ------------------ */
+
+  cell(FCSICOND2) { 
+  }
+  /* ---------------- *
+ * Design : FICIND1 *
+ * ---------------- */
+
+  cell(FICIND1) { 
+  }
+  /* ---------------- *
+ * Design : FICIND2 *
+ * ---------------- */
+
+  cell(FICIND2) { 
+  }
+  /* ---------------- *
+ * Design : FICOND1 *
+ * ---------------- */
+
+  cell(FICOND1) { 
+  }
+  /* ---------------- *
+ * Design : FICOND2 *
+ * ---------------- */
+
+  cell(FICOND2) { 
+  }
+  /* ----------------- *
+ * Design : FIICOND1 *
+ * ----------------- */
+
+  cell(FIICOND1) { 
+  }
+  /* ----------------- *
+ * Design : FIICOND2 *
+ * ----------------- */
+
+  cell(FIICOND2) { 
+  }
+  /* --------------- *
+ * Design : GAN2D1 *
+ * --------------- */
+
+  cell(GAN2D1) { 
+  }
+  /* --------------- *
+ * Design : GAN2D2 *
+ * --------------- */
+
+  cell(GAN2D2) { 
+  }
+  /* ----------------- *
+ * Design : GAOI21D1 *
+ * ----------------- */
+
+  cell(GAOI21D1) { 
+  }
+  /* ----------------- *
+ * Design : GAOI21D2 *
+ * ----------------- */
+
+  cell(GAOI21D2) { 
+  }
+  /* ----------------- *
+ * Design : GAOI22D1 *
+ * ----------------- */
+
+  cell(GAOI22D1) { 
+  }
+  /* ---------------- *
+ * Design : GBUFFD1 *
+ * ---------------- */
+
+  cell(GBUFFD1) { 
+  }
+  /* ---------------- *
+ * Design : GBUFFD2 *
+ * ---------------- */
+
+  cell(GBUFFD2) { 
+  }
+  /* ---------------- *
+ * Design : GBUFFD3 *
+ * ---------------- */
+
+  cell(GBUFFD3) { 
+  }
+  /* ---------------- *
+ * Design : GBUFFD4 *
+ * ---------------- */
+
+  cell(GBUFFD4) { 
+  }
+  /* ---------------- *
+ * Design : GBUFFD8 *
+ * ---------------- */
+
+  cell(GBUFFD8) { 
+  }
+  /* -------------- *
+ * Design : GDCAP *
+ * -------------- */
+
+  cell(GDCAP) { 
+  }
+  /* end of cell */
+  /* --------------- *
+ * Design : GDCAP2 *
+ * --------------- */
+
+  cell(GDCAP2) { 
+  }
+  /* end of cell */
+  /* --------------- *
+ * Design : GDCAP3 *
+ * --------------- */
+
+  cell(GDCAP3) { 
+  }
+  /* end of cell */
+  /* --------------- *
+ * Design : GDCAP4 *
+ * --------------- */
+
+  cell(GDCAP4) { 
+  }
+  /* end of cell */
+  /* ---------------- *
+ * Design : GDCAP10 *
+ * ---------------- */
+
+  cell(GDCAP10) { 
+  }
+  /* end of cell */
+  /* ----------------- *
+ * Design : GDFCNQD1 *
+ * ----------------- */
+
+  cell(GDFCNQD1) { 
+  }
+  /* --------------- *
+ * Design : GDFQD1 *
+ * --------------- */
+
+  cell(GDFQD1) { 
+  }
+  /* --------------- *
+ * Design : GINVD1 *
+ * --------------- */
+
+  cell(GINVD1) { 
+  }
+  /* --------------- *
+ * Design : GINVD2 *
+ * --------------- */
+
+  cell(GINVD2) { 
+  }
+  /* --------------- *
+ * Design : GINVD3 *
+ * --------------- */
+
+  cell(GINVD3) { 
+  }
+  /* --------------- *
+ * Design : GINVD4 *
+ * --------------- */
+
+  cell(GINVD4) { 
+  }
+  /* --------------- *
+ * Design : GINVD8 *
+ * --------------- */
+
+  cell(GINVD8) { 
+  }
+  /* ---------------- *
+ * Design : GMUX2D1 *
+ * ---------------- */
+
+  cell(GMUX2D1) { 
+  }
+  /* ---------------- *
+ * Design : GMUX2D2 *
+ * ---------------- */
+
+  cell(GMUX2D2) { 
+  }
+  /* ----------------- *
+ * Design : GMUX2ND1 *
+ * ----------------- */
+
+  cell(GMUX2ND1) { 
+  }
+  /* ----------------- *
+ * Design : GMUX2ND2 *
+ * ----------------- */
+
+  cell(GMUX2ND2) { 
+  }
+  /* --------------- *
+ * Design : GND2D1 *
+ * --------------- */
+
+  cell(GND2D1) { 
+  }
+  /* --------------- *
+ * Design : GND2D2 *
+ * --------------- */
+
+  cell(GND2D2) { 
+  }
+  /* --------------- *
+ * Design : GND2D3 *
+ * --------------- */
+
+  cell(GND2D3) { 
+  }
+  /* --------------- *
+ * Design : GND2D4 *
+ * --------------- */
+
+  cell(GND2D4) { 
+  }
+  /* --------------- *
+ * Design : GND3D1 *
+ * --------------- */
+
+  cell(GND3D1) { 
+  }
+  /* --------------- *
+ * Design : GND3D2 *
+ * --------------- */
+
+  cell(GND3D2) { 
+  }
+  /* --------------- *
+ * Design : GNR2D1 *
+ * --------------- */
+
+  cell(GNR2D1) { 
+  }
+  /* --------------- *
+ * Design : GNR2D2 *
+ * --------------- */
+
+  cell(GNR2D2) { 
+  }
+  /* --------------- *
+ * Design : GNR3D1 *
+ * --------------- */
+
+  cell(GNR3D1) { 
+  }
+  /* --------------- *
+ * Design : GNR3D2 *
+ * --------------- */
+
+  cell(GNR3D2) { 
+  }
+  /* ----------------- *
+ * Design : GOAI21D1 *
+ * ----------------- */
+
+  cell(GOAI21D1) { 
+  }
+  /* ----------------- *
+ * Design : GOAI21D2 *
+ * ----------------- */
+
+  cell(GOAI21D2) { 
+  }
+  /* --------------- *
+ * Design : GOR2D1 *
+ * --------------- */
+
+  cell(GOR2D1) { 
+  }
+  /* --------------- *
+ * Design : GOR2D2 *
+ * --------------- */
+
+  cell(GOR2D2) { 
+  }
+  /* ------------------ *
+ * Design : GSDFCNQD1 *
+ * ------------------ */
+
+  cell(GSDFCNQD1) { 
+  }
+  /* -------------- *
+ * Design : GTIEH *
+ * -------------- */
+
+  cell(GTIEH) { 
+  }
+  /* -------------- *
+ * Design : GTIEL *
+ * -------------- */
+
+  cell(GTIEL) { 
+  }
+  /* ---------------- *
+ * Design : GXNR2D1 *
+ * ---------------- */
+
+  cell(GXNR2D1) { 
+  }
+  /* ---------------- *
+ * Design : GXNR2D2 *
+ * ---------------- */
+
+  cell(GXNR2D2) { 
+  }
+  /* ---------------- *
+ * Design : GXOR2D1 *
+ * ---------------- */
+
+  cell(GXOR2D1) { 
+  }
+  /* ---------------- *
+ * Design : GXOR2D2 *
+ * ---------------- */
+
+  cell(GXOR2D2) { 
+  }
+  /* -------------- *
+ * Design : HA1D0 *
+ * -------------- */
+
+  cell(HA1D0) { 
+  }
+  /* -------------- *
+ * Design : HA1D1 *
+ * -------------- */
+
+  cell(HA1D1) { 
+  }
+  /* -------------- *
+ * Design : HA1D2 *
+ * -------------- */
+
+  cell(HA1D2) { 
+  }
+  /* -------------- *
+ * Design : HA1D4 *
+ * -------------- */
+
+  cell(HA1D4) { 
+  }
+  /* ------------------ *
+ * Design : HCOSCIND1 *
+ * ------------------ */
+
+  cell(HCOSCIND1) { 
+  }
+  /* ------------------ *
+ * Design : HCOSCIND2 *
+ * ------------------ */
+
+  cell(HCOSCIND2) { 
+  }
+  /* ------------------ *
+ * Design : HCOSCOND1 *
+ * ------------------ */
+
+  cell(HCOSCOND1) { 
+  }
+  /* ------------------ *
+ * Design : HCOSCOND2 *
+ * ------------------ */
+
+  cell(HCOSCOND2) { 
+  }
+  /* ---------------- *
+ * Design : HICIND1 *
+ * ---------------- */
+
+  cell(HICIND1) { 
+  }
+  /* ---------------- *
+ * Design : HICIND2 *
+ * ---------------- */
+
+  cell(HICIND2) { 
+  }
+  /* ---------------- *
+ * Design : HICOND1 *
+ * ---------------- */
+
+  cell(HICOND1) { 
+  }
+  /* ---------------- *
+ * Design : HICOND2 *
+ * ---------------- */
+
+  cell(HICOND2) { 
+  }
+  /* ---------------- *
+ * Design : IAO21D0 *
+ * ---------------- */
+
+  cell(IAO21D0) { 
+  }
+  /* ---------------- *
+ * Design : IAO21D1 *
+ * ---------------- */
+
+  cell(IAO21D1) { 
+  }
+  /* ---------------- *
+ * Design : IAO21D2 *
+ * ---------------- */
+
+  cell(IAO21D2) { 
+  }
+  /* ---------------- *
+ * Design : IAO21D4 *
+ * ---------------- */
+
+  cell(IAO21D4) { 
+  }
+  /* ---------------- *
+ * Design : IAO22D0 *
+ * ---------------- */
+
+  cell(IAO22D0) { 
+  }
+  /* ---------------- *
+ * Design : IAO22D1 *
+ * ---------------- */
+
+  cell(IAO22D1) { 
+  }
+  /* ---------------- *
+ * Design : IAO22D2 *
+ * ---------------- */
+
+  cell(IAO22D2) { 
+  }
+  /* ---------------- *
+ * Design : IAO22D4 *
+ * ---------------- */
+
+  cell(IAO22D4) { 
+  }
+  /* ---------------- *
+ * Design : IIND4D0 *
+ * ---------------- */
+
+  cell(IIND4D0) { 
+  }
+  /* ---------------- *
+ * Design : IIND4D1 *
+ * ---------------- */
+
+  cell(IIND4D1) { 
+  }
+  /* ---------------- *
+ * Design : IIND4D2 *
+ * ---------------- */
+
+  cell(IIND4D2) { 
+  }
+  /* ---------------- *
+ * Design : IIND4D4 *
+ * ---------------- */
+
+  cell(IIND4D4) { 
+  }
+  /* ---------------- *
+ * Design : IINR4D0 *
+ * ---------------- */
+
+  cell(IINR4D0) { 
+  }
+  /* ---------------- *
+ * Design : IINR4D1 *
+ * ---------------- */
+
+  cell(IINR4D1) { 
+  }
+  /* ---------------- *
+ * Design : IINR4D2 *
+ * ---------------- */
+
+  cell(IINR4D2) { 
+  }
+  /* ---------------- *
+ * Design : IINR4D4 *
+ * ---------------- */
+
+  cell(IINR4D4) { 
+  }
+  /* --------------- *
+ * Design : IND2D0 *
+ * --------------- */
+
+  cell(IND2D0) { 
+  }
+  /* --------------- *
+ * Design : IND2D1 *
+ * --------------- */
+
+  cell(IND2D1) { 
+  }
+  /* --------------- *
+ * Design : IND2D2 *
+ * --------------- */
+
+  cell(IND2D2) { 
+  }
+  /* --------------- *
+ * Design : IND2D4 *
+ * --------------- */
+
+  cell(IND2D4) { 
+  }
+  /* --------------- *
+ * Design : IND3D0 *
+ * --------------- */
+
+  cell(IND3D0) { 
+  }
+  /* --------------- *
+ * Design : IND3D1 *
+ * --------------- */
+
+  cell(IND3D1) { 
+  }
+  /* --------------- *
+ * Design : IND3D2 *
+ * --------------- */
+
+  cell(IND3D2) { 
+  }
+  /* --------------- *
+ * Design : IND3D4 *
+ * --------------- */
+
+  cell(IND3D4) { 
+  }
+  /* --------------- *
+ * Design : IND4D0 *
+ * --------------- */
+
+  cell(IND4D0) { 
+  }
+  /* --------------- *
+ * Design : IND4D1 *
+ * --------------- */
+
+  cell(IND4D1) { 
+  }
+  /* --------------- *
+ * Design : IND4D2 *
+ * --------------- */
+
+  cell(IND4D2) { 
+  }
+  /* --------------- *
+ * Design : IND4D4 *
+ * --------------- */
+
+  cell(IND4D4) { 
+  }
+  /* --------------- *
+ * Design : INR2D0 *
+ * --------------- */
+
+  cell(INR2D0) { 
+  }
+  /* --------------- *
+ * Design : INR2D1 *
+ * --------------- */
+
+  cell(INR2D1) { 
+  }
+  /* --------------- *
+ * Design : INR2D2 *
+ * --------------- */
+
+  cell(INR2D2) { 
+  }
+  /* --------------- *
+ * Design : INR2D4 *
+ * --------------- */
+
+  cell(INR2D4) { 
+  }
+  /* ---------------- *
+ * Design : INR2XD0 *
+ * ---------------- */
+
+  cell(INR2XD0) { 
+  }
+  /* ---------------- *
+ * Design : INR2XD1 *
+ * ---------------- */
+
+  cell(INR2XD1) { 
+  }
+  /* ---------------- *
+ * Design : INR2XD2 *
+ * ---------------- */
+
+  cell(INR2XD2) { 
+  }
+  /* ---------------- *
+ * Design : INR2XD4 *
+ * ---------------- */
+
+  cell(INR2XD4) { 
+  }
+  /* --------------- *
+ * Design : INR3D0 *
+ * --------------- */
+
+  cell(INR3D0) { 
+  }
+  /* --------------- *
+ * Design : INR3D1 *
+ * --------------- */
+
+  cell(INR3D1) { 
+  }
+  /* --------------- *
+ * Design : INR3D2 *
+ * --------------- */
+
+  cell(INR3D2) { 
+  }
+  /* --------------- *
+ * Design : INR3D4 *
+ * --------------- */
+
+  cell(INR3D4) { 
+  }
+  /* --------------- *
+ * Design : INR4D0 *
+ * --------------- */
+
+  cell(INR4D0) { 
+  }
+  /* --------------- *
+ * Design : INR4D1 *
+ * --------------- */
+
+  cell(INR4D1) { 
+  }
+  /* --------------- *
+ * Design : INR4D2 *
+ * --------------- */
+
+  cell(INR4D2) { 
+  }
+  /* --------------- *
+ * Design : INR4D4 *
+ * --------------- */
+
+  cell(INR4D4) { 
+  }
+  /* -------------- *
+ * Design : INVD0 *
+ * -------------- */
+
+  cell(INVD0) { 
+  }
+  /* -------------- *
+ * Design : INVD1 *
+ * -------------- */
+
+  cell(INVD1) { 
+  }
+  /* -------------- *
+ * Design : INVD2 *
+ * -------------- */
+
+  cell(INVD2) { 
+  }
+  /* -------------- *
+ * Design : INVD3 *
+ * -------------- */
+
+  cell(INVD3) { 
+  }
+  /* -------------- *
+ * Design : INVD4 *
+ * -------------- */
+
+  cell(INVD4) { 
+  }
+  /* -------------- *
+ * Design : INVD6 *
+ * -------------- */
+
+  cell(INVD6) { 
+  }
+  /* -------------- *
+ * Design : INVD8 *
+ * -------------- */
+
+  cell(INVD8) { 
+  }
+  /* --------------- *
+ * Design : INVD12 *
+ * --------------- */
+
+  cell(INVD12) { 
+  }
+  /* --------------- *
+ * Design : INVD16 *
+ * --------------- */
+
+  cell(INVD16) { 
+  }
+  /* --------------- *
+ * Design : INVD20 *
+ * --------------- */
+
+  cell(INVD20) { 
+  }
+  /* --------------- *
+ * Design : INVD24 *
+ * --------------- */
+
+  cell(INVD24) { 
+  }
+  /* ---------------- *
+ * Design : IOA21D0 *
+ * ---------------- */
+
+  cell(IOA21D0) { 
+  }
+  /* ---------------- *
+ * Design : IOA21D1 *
+ * ---------------- */
+
+  cell(IOA21D1) { 
+  }
+  /* ---------------- *
+ * Design : IOA21D2 *
+ * ---------------- */
+
+  cell(IOA21D2) { 
+  }
+  /* ---------------- *
+ * Design : IOA21D4 *
+ * ---------------- */
+
+  cell(IOA21D4) { 
+  }
+  /* ---------------- *
+ * Design : IOA22D0 *
+ * ---------------- */
+
+  cell(IOA22D0) { 
+  }
+  /* ---------------- *
+ * Design : IOA22D1 *
+ * ---------------- */
+
+  cell(IOA22D1) { 
+  }
+  /* ---------------- *
+ * Design : IOA22D2 *
+ * ---------------- */
+
+  cell(IOA22D2) { 
+  }
+  /* ---------------- *
+ * Design : IOA22D4 *
+ * ---------------- */
+
+  cell(IOA22D4) { 
+  }
+  /* --------------- *
+ * Design : LHCND1 *
+ * --------------- */
+
+  cell(LHCND1) { 
+  }
+  /* --------------- *
+ * Design : LHCND2 *
+ * --------------- */
+
+  cell(LHCND2) { 
+  }
+  /* --------------- *
+ * Design : LHCND4 *
+ * --------------- */
+
+  cell(LHCND4) { 
+  }
+  /* ---------------- *
+ * Design : LHCNDD1 *
+ * ---------------- */
+
+  cell(LHCNDD1) { 
+  }
+  /* ---------------- *
+ * Design : LHCNDD2 *
+ * ---------------- */
+
+  cell(LHCNDD2) { 
+  }
+  /* ---------------- *
+ * Design : LHCNDD4 *
+ * ---------------- */
+
+  cell(LHCNDD4) { 
+  }
+  /* ----------------- *
+ * Design : LHCNDQD1 *
+ * ----------------- */
+
+  cell(LHCNDQD1) { 
+  }
+  /* ----------------- *
+ * Design : LHCNDQD2 *
+ * ----------------- */
+
+  cell(LHCNDQD2) { 
+  }
+  /* ----------------- *
+ * Design : LHCNDQD4 *
+ * ----------------- */
+
+  cell(LHCNDQD4) { 
+  }
+  /* ---------------- *
+ * Design : LHCNQD1 *
+ * ---------------- */
+
+  cell(LHCNQD1) { 
+  }
+  /* ---------------- *
+ * Design : LHCNQD2 *
+ * ---------------- */
+
+  cell(LHCNQD2) { 
+  }
+  /* ---------------- *
+ * Design : LHCNQD4 *
+ * ---------------- */
+
+  cell(LHCNQD4) { 
+  }
+  /* ---------------- *
+ * Design : LHCSND1 *
+ * ---------------- */
+
+  cell(LHCSND1) { 
+  }
+  /* ---------------- *
+ * Design : LHCSND2 *
+ * ---------------- */
+
+  cell(LHCSND2) { 
+  }
+  /* ---------------- *
+ * Design : LHCSND4 *
+ * ---------------- */
+
+  cell(LHCSND4) { 
+  }
+  /* ----------------- *
+ * Design : LHCSNDD1 *
+ * ----------------- */
+
+  cell(LHCSNDD1) { 
+  }
+  /* ----------------- *
+ * Design : LHCSNDD2 *
+ * ----------------- */
+
+  cell(LHCSNDD2) { 
+  }
+  /* ----------------- *
+ * Design : LHCSNDD4 *
+ * ----------------- */
+
+  cell(LHCSNDD4) { 
+  }
+  /* ------------------ *
+ * Design : LHCSNDQD1 *
+ * ------------------ */
+
+  cell(LHCSNDQD1) { 
+  }
+  /* ------------------ *
+ * Design : LHCSNDQD2 *
+ * ------------------ */
+
+  cell(LHCSNDQD2) { 
+  }
+  /* ------------------ *
+ * Design : LHCSNDQD4 *
+ * ------------------ */
+
+  cell(LHCSNDQD4) { 
+  }
+  /* ----------------- *
+ * Design : LHCSNQD1 *
+ * ----------------- */
+
+  cell(LHCSNQD1) { 
+  }
+  /* ----------------- *
+ * Design : LHCSNQD2 *
+ * ----------------- */
+
+  cell(LHCSNQD2) { 
+  }
+  /* ----------------- *
+ * Design : LHCSNQD4 *
+ * ----------------- */
+
+  cell(LHCSNQD4) { 
+  }
+  /* ------------- *
+ * Design : LHD1 *
+ * ------------- */
+
+  cell(LHD1) { 
+  }
+  /* ------------- *
+ * Design : LHD2 *
+ * ------------- */
+
+  cell(LHD2) { 
+  }
+  /* ------------- *
+ * Design : LHD4 *
+ * ------------- */
+
+  cell(LHD4) { 
+  }
+  /* -------------- *
+ * Design : LHQD1 *
+ * -------------- */
+
+  cell(LHQD1) { 
+  }
+  /* -------------- *
+ * Design : LHQD2 *
+ * -------------- */
+
+  cell(LHQD2) { 
+  }
+  /* -------------- *
+ * Design : LHQD4 *
+ * -------------- */
+
+  cell(LHQD4) { 
+  }
+  /* --------------- *
+ * Design : LHSND1 *
+ * --------------- */
+
+  cell(LHSND1) { 
+  }
+  /* --------------- *
+ * Design : LHSND2 *
+ * --------------- */
+
+  cell(LHSND2) { 
+  }
+  /* --------------- *
+ * Design : LHSND4 *
+ * --------------- */
+
+  cell(LHSND4) { 
+  }
+  /* ---------------- *
+ * Design : LHSNDD1 *
+ * ---------------- */
+
+  cell(LHSNDD1) { 
+  }
+  /* ---------------- *
+ * Design : LHSNDD2 *
+ * ---------------- */
+
+  cell(LHSNDD2) { 
+  }
+  /* ---------------- *
+ * Design : LHSNDD4 *
+ * ---------------- */
+
+  cell(LHSNDD4) { 
+  }
+  /* ----------------- *
+ * Design : LHSNDQD1 *
+ * ----------------- */
+
+  cell(LHSNDQD1) { 
+  }
+  /* ----------------- *
+ * Design : LHSNDQD2 *
+ * ----------------- */
+
+  cell(LHSNDQD2) { 
+  }
+  /* ----------------- *
+ * Design : LHSNDQD4 *
+ * ----------------- */
+
+  cell(LHSNDQD4) { 
+  }
+  /* ---------------- *
+ * Design : LHSNQD1 *
+ * ---------------- */
+
+  cell(LHSNQD1) { 
+  }
+  /* ---------------- *
+ * Design : LHSNQD2 *
+ * ---------------- */
+
+  cell(LHSNQD2) { 
+  }
+  /* ---------------- *
+ * Design : LHSNQD4 *
+ * ---------------- */
+
+  cell(LHSNQD4) { 
+  }
+  /* --------------- *
+ * Design : LNCND1 *
+ * --------------- */
+
+  cell(LNCND1) { 
+  }
+  /* --------------- *
+ * Design : LNCND2 *
+ * --------------- */
+
+  cell(LNCND2) { 
+  }
+  /* --------------- *
+ * Design : LNCND4 *
+ * --------------- */
+
+  cell(LNCND4) { 
+  }
+  /* ---------------- *
+ * Design : LNCNDD1 *
+ * ---------------- */
+
+  cell(LNCNDD1) { 
+  }
+  /* ---------------- *
+ * Design : LNCNDD2 *
+ * ---------------- */
+
+  cell(LNCNDD2) { 
+  }
+  /* ---------------- *
+ * Design : LNCNDD4 *
+ * ---------------- */
+
+  cell(LNCNDD4) { 
+  }
+  /* ----------------- *
+ * Design : LNCNDQD1 *
+ * ----------------- */
+
+  cell(LNCNDQD1) { 
+  }
+  /* ----------------- *
+ * Design : LNCNDQD2 *
+ * ----------------- */
+
+  cell(LNCNDQD2) { 
+  }
+  /* ----------------- *
+ * Design : LNCNDQD4 *
+ * ----------------- */
+
+  cell(LNCNDQD4) { 
+  }
+  /* ---------------- *
+ * Design : LNCNQD1 *
+ * ---------------- */
+
+  cell(LNCNQD1) { 
+  }
+  /* ---------------- *
+ * Design : LNCNQD2 *
+ * ---------------- */
+
+  cell(LNCNQD2) { 
+  }
+  /* ---------------- *
+ * Design : LNCNQD4 *
+ * ---------------- */
+
+  cell(LNCNQD4) { 
+  }
+  /* ---------------- *
+ * Design : LNCSND1 *
+ * ---------------- */
+
+  cell(LNCSND1) { 
+  }
+  /* ---------------- *
+ * Design : LNCSND2 *
+ * ---------------- */
+
+  cell(LNCSND2) { 
+  }
+  /* ---------------- *
+ * Design : LNCSND4 *
+ * ---------------- */
+
+  cell(LNCSND4) { 
+  }
+  /* ----------------- *
+ * Design : LNCSNDD1 *
+ * ----------------- */
+
+  cell(LNCSNDD1) { 
+  }
+  /* ----------------- *
+ * Design : LNCSNDD2 *
+ * ----------------- */
+
+  cell(LNCSNDD2) { 
+  }
+  /* ----------------- *
+ * Design : LNCSNDD4 *
+ * ----------------- */
+
+  cell(LNCSNDD4) { 
+  }
+  /* ------------------ *
+ * Design : LNCSNDQD1 *
+ * ------------------ */
+
+  cell(LNCSNDQD1) { 
+  }
+  /* ------------------ *
+ * Design : LNCSNDQD2 *
+ * ------------------ */
+
+  cell(LNCSNDQD2) { 
+  }
+  /* ------------------ *
+ * Design : LNCSNDQD4 *
+ * ------------------ */
+
+  cell(LNCSNDQD4) { 
+  }
+  /* ----------------- *
+ * Design : LNCSNQD1 *
+ * ----------------- */
+
+  cell(LNCSNQD1) { 
+  }
+  /* ----------------- *
+ * Design : LNCSNQD2 *
+ * ----------------- */
+
+  cell(LNCSNQD2) { 
+  }
+  /* ----------------- *
+ * Design : LNCSNQD4 *
+ * ----------------- */
+
+  cell(LNCSNQD4) { 
+  }
+  /* ------------- *
+ * Design : LND1 *
+ * ------------- */
+
+  cell(LND1) { 
+  }
+  /* ------------- *
+ * Design : LND2 *
+ * ------------- */
+
+  cell(LND2) { 
+  }
+  /* ------------- *
+ * Design : LND4 *
+ * ------------- */
+
+  cell(LND4) { 
+  }
+  /* -------------- *
+ * Design : LNQD1 *
+ * -------------- */
+
+  cell(LNQD1) { 
+  }
+  /* -------------- *
+ * Design : LNQD2 *
+ * -------------- */
+
+  cell(LNQD2) { 
+  }
+  /* -------------- *
+ * Design : LNQD4 *
+ * -------------- */
+
+  cell(LNQD4) { 
+  }
+  /* --------------- *
+ * Design : LNSND1 *
+ * --------------- */
+
+  cell(LNSND1) { 
+  }
+  /* --------------- *
+ * Design : LNSND2 *
+ * --------------- */
+
+  cell(LNSND2) { 
+  }
+  /* --------------- *
+ * Design : LNSND4 *
+ * --------------- */
+
+  cell(LNSND4) { 
+  }
+  /* ---------------- *
+ * Design : LNSNDD1 *
+ * ---------------- */
+
+  cell(LNSNDD1) { 
+  }
+  /* ---------------- *
+ * Design : LNSNDD2 *
+ * ---------------- */
+
+  cell(LNSNDD2) { 
+  }
+  /* ---------------- *
+ * Design : LNSNDD4 *
+ * ---------------- */
+
+  cell(LNSNDD4) { 
+  }
+  /* ----------------- *
+ * Design : LNSNDQD1 *
+ * ----------------- */
+
+  cell(LNSNDQD1) { 
+  }
+  /* ----------------- *
+ * Design : LNSNDQD2 *
+ * ----------------- */
+
+  cell(LNSNDQD2) { 
+  }
+  /* ----------------- *
+ * Design : LNSNDQD4 *
+ * ----------------- */
+
+  cell(LNSNDQD4) { 
+  }
+  /* ---------------- *
+ * Design : LNSNQD1 *
+ * ---------------- */
+
+  cell(LNSNQD1) { 
+  }
+  /* ---------------- *
+ * Design : LNSNQD2 *
+ * ---------------- */
+
+  cell(LNSNQD2) { 
+  }
+  /* ---------------- *
+ * Design : LNSNQD4 *
+ * ---------------- */
+
+  cell(LNSNQD4) { 
+  }
+  /* ------------------ *
+ * Design : MAOI222D0 *
+ * ------------------ */
+
+  cell(MAOI222D0) { 
+  }
+  /* ------------------ *
+ * Design : MAOI222D1 *
+ * ------------------ */
+
+  cell(MAOI222D1) { 
+  }
+  /* ------------------ *
+ * Design : MAOI222D2 *
+ * ------------------ */
+
+  cell(MAOI222D2) { 
+  }
+  /* ------------------ *
+ * Design : MAOI222D4 *
+ * ------------------ */
+
+  cell(MAOI222D4) { 
+  }
+  /* ----------------- *
+ * Design : MAOI22D0 *
+ * ----------------- */
+
+  cell(MAOI22D0) { 
+  }
+  /* ----------------- *
+ * Design : MAOI22D1 *
+ * ----------------- */
+
+  cell(MAOI22D1) { 
+  }
+  /* ----------------- *
+ * Design : MAOI22D2 *
+ * ----------------- */
+
+  cell(MAOI22D2) { 
+  }
+  /* ----------------- *
+ * Design : MAOI22D4 *
+ * ----------------- */
+
+  cell(MAOI22D4) { 
+  }
+  /* ----------------- *
+ * Design : MOAI22D0 *
+ * ----------------- */
+
+  cell(MOAI22D0) { 
+  }
+  /* ----------------- *
+ * Design : MOAI22D1 *
+ * ----------------- */
+
+  cell(MOAI22D1) { 
+  }
+  /* ----------------- *
+ * Design : MOAI22D2 *
+ * ----------------- */
+
+  cell(MOAI22D2) { 
+  }
+  /* ----------------- *
+ * Design : MOAI22D4 *
+ * ----------------- */
+
+  cell(MOAI22D4) { 
+  }
+  /* --------------- *
+ * Design : MUX2D0 *
+ * --------------- */
+
+  cell(MUX2D0) { 
+  }
+  /* --------------- *
+ * Design : MUX2D1 *
+ * --------------- */
+
+  cell(MUX2D1) { 
+  }
+  /* --------------- *
+ * Design : MUX2D2 *
+ * --------------- */
+
+  cell(MUX2D2) { 
+  }
+  /* --------------- *
+ * Design : MUX2D4 *
+ * --------------- */
+
+  cell(MUX2D4) { 
+  }
+  /* ---------------- *
+ * Design : MUX2ND0 *
+ * ---------------- */
+
+  cell(MUX2ND0) { 
+  }
+  /* ---------------- *
+ * Design : MUX2ND1 *
+ * ---------------- */
+
+  cell(MUX2ND1) { 
+  }
+  /* ---------------- *
+ * Design : MUX2ND2 *
+ * ---------------- */
+
+  cell(MUX2ND2) { 
+  }
+  /* ---------------- *
+ * Design : MUX2ND4 *
+ * ---------------- */
+
+  cell(MUX2ND4) { 
+  }
+  /* --------------- *
+ * Design : MUX3D0 *
+ * --------------- */
+
+  cell(MUX3D0) { 
+  }
+  /* --------------- *
+ * Design : MUX3D1 *
+ * --------------- */
+
+  cell(MUX3D1) { 
+  }
+  /* --------------- *
+ * Design : MUX3D2 *
+ * --------------- */
+
+  cell(MUX3D2) { 
+  }
+  /* --------------- *
+ * Design : MUX3D4 *
+ * --------------- */
+
+  cell(MUX3D4) { 
+  }
+  /* ---------------- *
+ * Design : MUX3ND0 *
+ * ---------------- */
+
+  cell(MUX3ND0) { 
+  }
+  /* ---------------- *
+ * Design : MUX3ND1 *
+ * ---------------- */
+
+  cell(MUX3ND1) { 
+  }
+  /* ---------------- *
+ * Design : MUX3ND2 *
+ * ---------------- */
+
+  cell(MUX3ND2) { 
+  }
+  /* ---------------- *
+ * Design : MUX3ND4 *
+ * ---------------- */
+
+  cell(MUX3ND4) { 
+  }
+  /* --------------- *
+ * Design : MUX4D0 *
+ * --------------- */
+
+  cell(MUX4D0) { 
+  }
+  /* --------------- *
+ * Design : MUX4D1 *
+ * --------------- */
+
+  cell(MUX4D1) { 
+  }
+  /* --------------- *
+ * Design : MUX4D2 *
+ * --------------- */
+
+  cell(MUX4D2) { 
+  }
+  /* --------------- *
+ * Design : MUX4D4 *
+ * --------------- */
+
+  cell(MUX4D4) { 
+  }
+  /* ---------------- *
+ * Design : MUX4ND0 *
+ * ---------------- */
+
+  cell(MUX4ND0) { 
+  }
+  /* ---------------- *
+ * Design : MUX4ND1 *
+ * ---------------- */
+
+  cell(MUX4ND1) { 
+  }
+  /* ---------------- *
+ * Design : MUX4ND2 *
+ * ---------------- */
+
+  cell(MUX4ND2) { 
+  }
+  /* ---------------- *
+ * Design : MUX4ND4 *
+ * ---------------- */
+
+  cell(MUX4ND4) { 
+  }
+  /* -------------- *
+ * Design : ND2D0 *
+ * -------------- */
+
+  cell(ND2D0) { 
+  }
+  /* -------------- *
+ * Design : ND2D1 *
+ * -------------- */
+
+  cell(ND2D1) { 
+  }
+  /* -------------- *
+ * Design : ND2D2 *
+ * -------------- */
+
+  cell(ND2D2) { 
+  }
+  /* -------------- *
+ * Design : ND2D3 *
+ * -------------- */
+
+  cell(ND2D3) { 
+  }
+  /* -------------- *
+ * Design : ND2D4 *
+ * -------------- */
+
+  cell(ND2D4) { 
+  }
+  /* -------------- *
+ * Design : ND2D8 *
+ * -------------- */
+
+  cell(ND2D8) { 
+  }
+  /* -------------- *
+ * Design : ND3D0 *
+ * -------------- */
+
+  cell(ND3D0) { 
+  }
+  /* -------------- *
+ * Design : ND3D1 *
+ * -------------- */
+
+  cell(ND3D1) { 
+  }
+  /* -------------- *
+ * Design : ND3D2 *
+ * -------------- */
+
+  cell(ND3D2) { 
+  }
+  /* -------------- *
+ * Design : ND3D3 *
+ * -------------- */
+
+  cell(ND3D3) { 
+  }
+  /* -------------- *
+ * Design : ND3D4 *
+ * -------------- */
+
+  cell(ND3D4) { 
+  }
+  /* -------------- *
+ * Design : ND3D8 *
+ * -------------- */
+
+  cell(ND3D8) { 
+  }
+  /* -------------- *
+ * Design : ND4D0 *
+ * -------------- */
+
+  cell(ND4D0) { 
+  }
+  /* -------------- *
+ * Design : ND4D1 *
+ * -------------- */
+
+  cell(ND4D1) { 
+  }
+  /* -------------- *
+ * Design : ND4D2 *
+ * -------------- */
+
+  cell(ND4D2) { 
+  }
+  /* -------------- *
+ * Design : ND4D3 *
+ * -------------- */
+
+  cell(ND4D3) { 
+  }
+  /* -------------- *
+ * Design : ND4D4 *
+ * -------------- */
+
+  cell(ND4D4) { 
+  }
+  /* -------------- *
+ * Design : ND4D8 *
+ * -------------- */
+
+  cell(ND4D8) { 
+  }
+  /* -------------- *
+ * Design : NR2D0 *
+ * -------------- */
+
+  cell(NR2D0) { 
+  }
+  /* -------------- *
+ * Design : NR2D1 *
+ * -------------- */
+
+  cell(NR2D1) { 
+  }
+  /* -------------- *
+ * Design : NR2D2 *
+ * -------------- */
+
+  cell(NR2D2) { 
+  }
+  /* -------------- *
+ * Design : NR2D3 *
+ * -------------- */
+
+  cell(NR2D3) { 
+  }
+  /* -------------- *
+ * Design : NR2D4 *
+ * -------------- */
+
+  cell(NR2D4) { 
+  }
+  /* -------------- *
+ * Design : NR2D8 *
+ * -------------- */
+
+  cell(NR2D8) { 
+  }
+  /* --------------- *
+ * Design : NR2XD0 *
+ * --------------- */
+
+  cell(NR2XD0) { 
+  }
+  /* --------------- *
+ * Design : NR2XD1 *
+ * --------------- */
+
+  cell(NR2XD1) { 
+  }
+  /* --------------- *
+ * Design : NR2XD2 *
+ * --------------- */
+
+  cell(NR2XD2) { 
+  }
+  /* --------------- *
+ * Design : NR2XD3 *
+ * --------------- */
+
+  cell(NR2XD3) { 
+  }
+  /* --------------- *
+ * Design : NR2XD4 *
+ * --------------- */
+
+  cell(NR2XD4) { 
+  }
+  /* --------------- *
+ * Design : NR2XD8 *
+ * --------------- */
+
+  cell(NR2XD8) { 
+  }
+  /* -------------- *
+ * Design : NR3D0 *
+ * -------------- */
+
+  cell(NR3D0) { 
+  }
+  /* -------------- *
+ * Design : NR3D1 *
+ * -------------- */
+
+  cell(NR3D1) { 
+  }
+  /* -------------- *
+ * Design : NR3D2 *
+ * -------------- */
+
+  cell(NR3D2) { 
+  }
+  /* -------------- *
+ * Design : NR3D3 *
+ * -------------- */
+
+  cell(NR3D3) { 
+  }
+  /* -------------- *
+ * Design : NR3D4 *
+ * -------------- */
+
+  cell(NR3D4) { 
+  }
+  /* -------------- *
+ * Design : NR3D8 *
+ * -------------- */
+
+  cell(NR3D8) { 
+  }
+  /* -------------- *
+ * Design : NR4D0 *
+ * -------------- */
+
+  cell(NR4D0) { 
+  }
+  /* -------------- *
+ * Design : NR4D1 *
+ * -------------- */
+
+  cell(NR4D1) { 
+  }
+  /* -------------- *
+ * Design : NR4D2 *
+ * -------------- */
+
+  cell(NR4D2) { 
+  }
+  /* -------------- *
+ * Design : NR4D3 *
+ * -------------- */
+
+  cell(NR4D3) { 
+  }
+  /* -------------- *
+ * Design : NR4D4 *
+ * -------------- */
+
+  cell(NR4D4) { 
+  }
+  /* -------------- *
+ * Design : NR4D8 *
+ * -------------- */
+
+  cell(NR4D8) { 
+  }
+  /* ---------------- *
+ * Design : OA211D0 *
+ * ---------------- */
+
+  cell(OA211D0) { 
+  }
+  /* ---------------- *
+ * Design : OA211D1 *
+ * ---------------- */
+
+  cell(OA211D1) { 
+  }
+  /* ---------------- *
+ * Design : OA211D2 *
+ * ---------------- */
+
+  cell(OA211D2) { 
+  }
+  /* ---------------- *
+ * Design : OA211D4 *
+ * ---------------- */
+
+  cell(OA211D4) { 
+  }
+  /* --------------- *
+ * Design : OA21D0 *
+ * --------------- */
+
+  cell(OA21D0) { 
+  }
+  /* --------------- *
+ * Design : OA21D1 *
+ * --------------- */
+
+  cell(OA21D1) { 
+  }
+  /* --------------- *
+ * Design : OA21D2 *
+ * --------------- */
+
+  cell(OA21D2) { 
+  }
+  /* --------------- *
+ * Design : OA21D4 *
+ * --------------- */
+
+  cell(OA21D4) { 
+  }
+  /* ---------------- *
+ * Design : OA221D0 *
+ * ---------------- */
+
+  cell(OA221D0) { 
+  }
+  /* ---------------- *
+ * Design : OA221D1 *
+ * ---------------- */
+
+  cell(OA221D1) { 
+  }
+  /* ---------------- *
+ * Design : OA221D2 *
+ * ---------------- */
+
+  cell(OA221D2) { 
+  }
+  /* ---------------- *
+ * Design : OA221D4 *
+ * ---------------- */
+
+  cell(OA221D4) { 
+  }
+  /* ---------------- *
+ * Design : OA222D0 *
+ * ---------------- */
+
+  cell(OA222D0) { 
+  }
+  /* ---------------- *
+ * Design : OA222D1 *
+ * ---------------- */
+
+  cell(OA222D1) { 
+  }
+  /* ---------------- *
+ * Design : OA222D2 *
+ * ---------------- */
+
+  cell(OA222D2) { 
+  }
+  /* ---------------- *
+ * Design : OA222D4 *
+ * ---------------- */
+
+  cell(OA222D4) { 
+  }
+  /* --------------- *
+ * Design : OA22D0 *
+ * --------------- */
+
+  cell(OA22D0) { 
+  }
+  /* --------------- *
+ * Design : OA22D1 *
+ * --------------- */
+
+  cell(OA22D1) { 
+  }
+  /* --------------- *
+ * Design : OA22D2 *
+ * --------------- */
+
+  cell(OA22D2) { 
+  }
+  /* --------------- *
+ * Design : OA22D4 *
+ * --------------- */
+
+  cell(OA22D4) { 
+  }
+  /* --------------- *
+ * Design : OA31D0 *
+ * --------------- */
+
+  cell(OA31D0) { 
+  }
+  /* --------------- *
+ * Design : OA31D1 *
+ * --------------- */
+
+  cell(OA31D1) { 
+  }
+  /* --------------- *
+ * Design : OA31D2 *
+ * --------------- */
+
+  cell(OA31D2) { 
+  }
+  /* --------------- *
+ * Design : OA31D4 *
+ * --------------- */
+
+  cell(OA31D4) { 
+  }
+  /* --------------- *
+ * Design : OA32D0 *
+ * --------------- */
+
+  cell(OA32D0) { 
+  }
+  /* --------------- *
+ * Design : OA32D1 *
+ * --------------- */
+
+  cell(OA32D1) { 
+  }
+  /* --------------- *
+ * Design : OA32D2 *
+ * --------------- */
+
+  cell(OA32D2) { 
+  }
+  /* --------------- *
+ * Design : OA32D4 *
+ * --------------- */
+
+  cell(OA32D4) { 
+  }
+  /* --------------- *
+ * Design : OA33D0 *
+ * --------------- */
+
+  cell(OA33D0) { 
+  }
+  /* --------------- *
+ * Design : OA33D1 *
+ * --------------- */
+
+  cell(OA33D1) { 
+  }
+  /* --------------- *
+ * Design : OA33D2 *
+ * --------------- */
+
+  cell(OA33D2) { 
+  }
+  /* --------------- *
+ * Design : OA33D4 *
+ * --------------- */
+
+  cell(OA33D4) { 
+  }
+  /* ----------------- *
+ * Design : OAI211D0 *
+ * ----------------- */
+
+  cell(OAI211D0) { 
+  }
+  /* ----------------- *
+ * Design : OAI211D1 *
+ * ----------------- */
+
+  cell(OAI211D1) { 
+  }
+  /* ----------------- *
+ * Design : OAI211D2 *
+ * ----------------- */
+
+  cell(OAI211D2) { 
+  }
+  /* ----------------- *
+ * Design : OAI211D4 *
+ * ----------------- */
+
+  cell(OAI211D4) { 
+  }
+  /* ---------------- *
+ * Design : OAI21D0 *
+ * ---------------- */
+
+  cell(OAI21D0) { 
+  }
+  /* ---------------- *
+ * Design : OAI21D1 *
+ * ---------------- */
+
+  cell(OAI21D1) { 
+  }
+  /* ---------------- *
+ * Design : OAI21D2 *
+ * ---------------- */
+
+  cell(OAI21D2) { 
+  }
+  /* ---------------- *
+ * Design : OAI21D4 *
+ * ---------------- */
+
+  cell(OAI21D4) { 
+  }
+  /* ----------------- *
+ * Design : OAI221D0 *
+ * ----------------- */
+
+  cell(OAI221D0) { 
+  }
+  /* ----------------- *
+ * Design : OAI221D1 *
+ * ----------------- */
+
+  cell(OAI221D1) { 
+  }
+  /* ----------------- *
+ * Design : OAI221D2 *
+ * ----------------- */
+
+  cell(OAI221D2) { 
+  }
+  /* ----------------- *
+ * Design : OAI221D4 *
+ * ----------------- */
+
+  cell(OAI221D4) { 
+  }
+  /* ------------------ *
+ * Design : OAI221XD4 *
+ * ------------------ */
+
+  cell(OAI221XD4) { 
+  }
+  /* ----------------- *
+ * Design : OAI222D0 *
+ * ----------------- */
+
+  cell(OAI222D0) { 
+  }
+  /* ----------------- *
+ * Design : OAI222D1 *
+ * ----------------- */
+
+  cell(OAI222D1) { 
+  }
+  /* ----------------- *
+ * Design : OAI222D2 *
+ * ----------------- */
+
+  cell(OAI222D2) { 
+  }
+  /* ----------------- *
+ * Design : OAI222D4 *
+ * ----------------- */
+
+  cell(OAI222D4) { 
+  }
+  /* ------------------ *
+ * Design : OAI222XD4 *
+ * ------------------ */
+
+  cell(OAI222XD4) { 
+  }
+  /* ---------------- *
+ * Design : OAI22D0 *
+ * ---------------- */
+
+  cell(OAI22D0) { 
+  }
+  /* ---------------- *
+ * Design : OAI22D1 *
+ * ---------------- */
+
+  cell(OAI22D1) { 
+  }
+  /* ---------------- *
+ * Design : OAI22D2 *
+ * ---------------- */
+
+  cell(OAI22D2) { 
+  }
+  /* ---------------- *
+ * Design : OAI22D4 *
+ * ---------------- */
+
+  cell(OAI22D4) { 
+  }
+  /* ---------------- *
+ * Design : OAI31D0 *
+ * ---------------- */
+
+  cell(OAI31D0) { 
+  }
+  /* ---------------- *
+ * Design : OAI31D1 *
+ * ---------------- */
+
+  cell(OAI31D1) { 
+  }
+  /* ---------------- *
+ * Design : OAI31D2 *
+ * ---------------- */
+
+  cell(OAI31D2) { 
+  }
+  /* ---------------- *
+ * Design : OAI31D4 *
+ * ---------------- */
+
+  cell(OAI31D4) { 
+  }
+  /* ---------------- *
+ * Design : OAI32D0 *
+ * ---------------- */
+
+  cell(OAI32D0) { 
+  }
+  /* ---------------- *
+ * Design : OAI32D1 *
+ * ---------------- */
+
+  cell(OAI32D1) { 
+  }
+  /* ---------------- *
+ * Design : OAI32D2 *
+ * ---------------- */
+
+  cell(OAI32D2) { 
+  }
+  /* ---------------- *
+ * Design : OAI32D4 *
+ * ---------------- */
+
+  cell(OAI32D4) { 
+  }
+  /* ----------------- *
+ * Design : OAI32XD4 *
+ * ----------------- */
+
+  cell(OAI32XD4) { 
+  }
+  /* ---------------- *
+ * Design : OAI33D0 *
+ * ---------------- */
+
+  cell(OAI33D0) { 
+  }
+  /* ---------------- *
+ * Design : OAI33D1 *
+ * ---------------- */
+
+  cell(OAI33D1) { 
+  }
+  /* ---------------- *
+ * Design : OAI33D2 *
+ * ---------------- */
+
+  cell(OAI33D2) { 
+  }
+  /* ---------------- *
+ * Design : OAI33D4 *
+ * ---------------- */
+
+  cell(OAI33D4) { 
+  }
+  /* ----------------- *
+ * Design : OAI33XD4 *
+ * ----------------- */
+
+  cell(OAI33XD4) { 
+  }
+  /* ------------------- *
+ * Design : OD18DCAP16 *
+ * ------------------- */
+
+  cell(OD18DCAP16) { 
+  }
+  /* ------------------- *
+ * Design : OD18DCAP32 *
+ * ------------------- */
+
+  cell(OD18DCAP32) { 
+  }
+  /* ------------------- *
+ * Design : OD18DCAP64 *
+ * ------------------- */
+
+  cell(OD18DCAP64) { 
+  }
+  /* -------------- *
+ * Design : OR2D0 *
+ * -------------- */
+
+  cell(OR2D0) { 
+  }
+  /* -------------- *
+ * Design : OR2D1 *
+ * -------------- */
+
+  cell(OR2D1) { 
+  }
+  /* -------------- *
+ * Design : OR2D2 *
+ * -------------- */
+
+  cell(OR2D2) { 
+  }
+  /* -------------- *
+ * Design : OR2D4 *
+ * -------------- */
+
+  cell(OR2D4) { 
+  }
+  /* -------------- *
+ * Design : OR2D8 *
+ * -------------- */
+
+  cell(OR2D8) { 
+  }
+  /* --------------- *
+ * Design : OR2XD1 *
+ * --------------- */
+
+  cell(OR2XD1) { 
+  }
+  /* -------------- *
+ * Design : OR3D0 *
+ * -------------- */
+
+  cell(OR3D0) { 
+  }
+  /* -------------- *
+ * Design : OR3D1 *
+ * -------------- */
+
+  cell(OR3D1) { 
+  }
+  /* -------------- *
+ * Design : OR3D2 *
+ * -------------- */
+
+  cell(OR3D2) { 
+  }
+  /* -------------- *
+ * Design : OR3D4 *
+ * -------------- */
+
+  cell(OR3D4) { 
+  }
+  /* -------------- *
+ * Design : OR3D8 *
+ * -------------- */
+
+  cell(OR3D8) { 
+  }
+  /* --------------- *
+ * Design : OR3XD1 *
+ * --------------- */
+
+  cell(OR3XD1) { 
+  }
+  /* -------------- *
+ * Design : OR4D0 *
+ * -------------- */
+
+  cell(OR4D0) { 
+  }
+  /* -------------- *
+ * Design : OR4D1 *
+ * -------------- */
+
+  cell(OR4D1) { 
+  }
+  /* -------------- *
+ * Design : OR4D2 *
+ * -------------- */
+
+  cell(OR4D2) { 
+  }
+  /* -------------- *
+ * Design : OR4D4 *
+ * -------------- */
+
+  cell(OR4D4) { 
+  }
+  /* -------------- *
+ * Design : OR4D8 *
+ * -------------- */
+
+  cell(OR4D8) { 
+  }
+  /* --------------- *
+ * Design : OR4XD1 *
+ * --------------- */
+
+  cell(OR4XD1) { 
+  }
+  /* ---------------- *
+ * Design : SDFCND0 *
+ * ---------------- */
+
+  cell(SDFCND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFCND1 *
+ * ---------------- */
+
+  cell(SDFCND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFCND2 *
+ * ---------------- */
+
+  cell(SDFCND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFCND4 *
+ * ---------------- */
+
+  cell(SDFCND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCNQD0 *
+ * ----------------- */
+
+  cell(SDFCNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCNQD1 *
+ * ----------------- */
+
+  cell(SDFCNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCNQD2 *
+ * ----------------- */
+
+  cell(SDFCNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCNQD4 *
+ * ----------------- */
+
+  cell(SDFCNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCSND0 *
+ * ----------------- */
+
+  cell(SDFCSND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCSND1 *
+ * ----------------- */
+
+  cell(SDFCSND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCSND2 *
+ * ----------------- */
+
+  cell(SDFCSND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFCSND4 *
+ * ----------------- */
+
+  cell(SDFCSND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFCSNQD0 *
+ * ------------------ */
+
+  cell(SDFCSNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFCSNQD1 *
+ * ------------------ */
+
+  cell(SDFCSNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFCSNQD2 *
+ * ------------------ */
+
+  cell(SDFCSNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFCSNQD4 *
+ * ------------------ */
+
+  cell(SDFCSNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* -------------- *
+ * Design : SDFD0 *
+ * -------------- */
+
+  cell(SDFD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* -------------- *
+ * Design : SDFD1 *
+ * -------------- */
+
+  cell(SDFD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* -------------- *
+ * Design : SDFD2 *
+ * -------------- */
+
+  cell(SDFD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* -------------- *
+ * Design : SDFD4 *
+ * -------------- */
+
+  cell(SDFD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKCND0 *
+ * ----------------- */
+
+  cell(SDFKCND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKCND1 *
+ * ----------------- */
+
+  cell(SDFKCND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKCND2 *
+ * ----------------- */
+
+  cell(SDFKCND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKCND4 *
+ * ----------------- */
+
+  cell(SDFKCND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCNQD0 *
+ * ------------------ */
+
+  cell(SDFKCNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCNQD1 *
+ * ------------------ */
+
+  cell(SDFKCNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCNQD2 *
+ * ------------------ */
+
+  cell(SDFKCNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCNQD4 *
+ * ------------------ */
+
+  cell(SDFKCNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCSND0 *
+ * ------------------ */
+
+  cell(SDFKCSND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCSND1 *
+ * ------------------ */
+
+  cell(SDFKCSND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCSND2 *
+ * ------------------ */
+
+  cell(SDFKCSND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKCSND4 *
+ * ------------------ */
+
+  cell(SDFKCSND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SDFKCSNQD0 *
+ * ------------------- */
+
+  cell(SDFKCSNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SDFKCSNQD1 *
+ * ------------------- */
+
+  cell(SDFKCSNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SDFKCSNQD2 *
+ * ------------------- */
+
+  cell(SDFKCSNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SDFKCSNQD4 *
+ * ------------------- */
+
+  cell(SDFKCSNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKSND0 *
+ * ----------------- */
+
+  cell(SDFKSND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKSND1 *
+ * ----------------- */
+
+  cell(SDFKSND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKSND2 *
+ * ----------------- */
+
+  cell(SDFKSND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFKSND4 *
+ * ----------------- */
+
+  cell(SDFKSND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKSNQD0 *
+ * ------------------ */
+
+  cell(SDFKSNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKSNQD1 *
+ * ------------------ */
+
+  cell(SDFKSNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKSNQD2 *
+ * ------------------ */
+
+  cell(SDFKSNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFKSNQD4 *
+ * ------------------ */
+
+  cell(SDFKSNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNCND0 *
+ * ----------------- */
+
+  cell(SDFNCND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNCND1 *
+ * ----------------- */
+
+  cell(SDFNCND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNCND2 *
+ * ----------------- */
+
+  cell(SDFNCND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNCND4 *
+ * ----------------- */
+
+  cell(SDFNCND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFNCSND0 *
+ * ------------------ */
+
+  cell(SDFNCSND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFNCSND1 *
+ * ------------------ */
+
+  cell(SDFNCSND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFNCSND2 *
+ * ------------------ */
+
+  cell(SDFNCSND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SDFNCSND4 *
+ * ------------------ */
+
+  cell(SDFNCSND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFND0 *
+ * --------------- */
+
+  cell(SDFND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFND1 *
+ * --------------- */
+
+  cell(SDFND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFND2 *
+ * --------------- */
+
+  cell(SDFND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFND4 *
+ * --------------- */
+
+  cell(SDFND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNSND0 *
+ * ----------------- */
+
+  cell(SDFNSND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNSND1 *
+ * ----------------- */
+
+  cell(SDFNSND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNSND2 *
+ * ----------------- */
+
+  cell(SDFNSND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFNSND4 *
+ * ----------------- */
+
+  cell(SDFNSND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFQD0 *
+ * --------------- */
+
+  cell(SDFQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFQD1 *
+ * --------------- */
+
+  cell(SDFQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFQD2 *
+ * --------------- */
+
+  cell(SDFQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFQD4 *
+ * --------------- */
+
+  cell(SDFQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFQND0 *
+ * ---------------- */
+
+  cell(SDFQND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFQND1 *
+ * ---------------- */
+
+  cell(SDFQND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFQND2 *
+ * ---------------- */
+
+  cell(SDFQND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFQND4 *
+ * ---------------- */
+
+  cell(SDFQND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFSND0 *
+ * ---------------- */
+
+  cell(SDFSND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFSND1 *
+ * ---------------- */
+
+  cell(SDFSND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFSND2 *
+ * ---------------- */
+
+  cell(SDFSND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFSND4 *
+ * ---------------- */
+
+  cell(SDFSND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFSNQD0 *
+ * ----------------- */
+
+  cell(SDFSNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFSNQD1 *
+ * ----------------- */
+
+  cell(SDFSNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFSNQD2 *
+ * ----------------- */
+
+  cell(SDFSNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SDFSNQD4 *
+ * ----------------- */
+
+  cell(SDFSNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFXD0 *
+ * --------------- */
+
+  cell(SDFXD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFXD1 *
+ * --------------- */
+
+  cell(SDFXD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFXD2 *
+ * --------------- */
+
+  cell(SDFXD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SDFXD4 *
+ * --------------- */
+
+  cell(SDFXD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFXQD0 *
+ * ---------------- */
+
+  cell(SDFXQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFXQD1 *
+ * ---------------- */
+
+  cell(SDFXQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFXQD2 *
+ * ---------------- */
+
+  cell(SDFXQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SDFXQD4 *
+ * ---------------- */
+
+  cell(SDFXQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFCND0 *
+ * ----------------- */
+
+  cell(SEDFCND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFCND1 *
+ * ----------------- */
+
+  cell(SEDFCND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFCND2 *
+ * ----------------- */
+
+  cell(SEDFCND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFCND4 *
+ * ----------------- */
+
+  cell(SEDFCND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFCNQD0 *
+ * ------------------ */
+
+  cell(SEDFCNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFCNQD1 *
+ * ------------------ */
+
+  cell(SEDFCNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFCNQD2 *
+ * ------------------ */
+
+  cell(SEDFCNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFCNQD4 *
+ * ------------------ */
+
+  cell(SEDFCNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SEDFD0 *
+ * --------------- */
+
+  cell(SEDFD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SEDFD1 *
+ * --------------- */
+
+  cell(SEDFD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SEDFD2 *
+ * --------------- */
+
+  cell(SEDFD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* --------------- *
+ * Design : SEDFD4 *
+ * --------------- */
+
+  cell(SEDFD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFKCND0 *
+ * ------------------ */
+
+  cell(SEDFKCND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFKCND1 *
+ * ------------------ */
+
+  cell(SEDFKCND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFKCND2 *
+ * ------------------ */
+
+  cell(SEDFKCND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFKCND4 *
+ * ------------------ */
+
+  cell(SEDFKCND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SEDFKCNQD0 *
+ * ------------------- */
+
+  cell(SEDFKCNQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SEDFKCNQD1 *
+ * ------------------- */
+
+  cell(SEDFKCNQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SEDFKCNQD2 *
+ * ------------------- */
+
+  cell(SEDFKCNQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------- *
+ * Design : SEDFKCNQD4 *
+ * ------------------- */
+
+  cell(SEDFKCNQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFQD0 *
+ * ---------------- */
+
+  cell(SEDFQD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFQD1 *
+ * ---------------- */
+
+  cell(SEDFQD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFQD2 *
+ * ---------------- */
+
+  cell(SEDFQD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFQD4 *
+ * ---------------- */
+
+  cell(SEDFQD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQND0 *
+ * ----------------- */
+
+  cell(SEDFQND0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQND1 *
+ * ----------------- */
+
+  cell(SEDFQND1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQND2 *
+ * ----------------- */
+
+  cell(SEDFQND2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQND4 *
+ * ----------------- */
+
+  cell(SEDFQND4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFQNXD0 *
+ * ------------------ */
+
+  cell(SEDFQNXD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFQNXD1 *
+ * ------------------ */
+
+  cell(SEDFQNXD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFQNXD2 *
+ * ------------------ */
+
+  cell(SEDFQNXD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------------ *
+ * Design : SEDFQNXD4 *
+ * ------------------ */
+
+  cell(SEDFQNXD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQXD0 *
+ * ----------------- */
+
+  cell(SEDFQXD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQXD1 *
+ * ----------------- */
+
+  cell(SEDFQXD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQXD2 *
+ * ----------------- */
+
+  cell(SEDFQXD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ----------------- *
+ * Design : SEDFQXD4 *
+ * ----------------- */
+
+  cell(SEDFQXD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFXD0 *
+ * ---------------- */
+
+  cell(SEDFXD0) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFXD1 *
+ * ---------------- */
+
+  cell(SEDFXD1) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFXD2 *
+ * ---------------- */
+
+  cell(SEDFXD2) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ---------------- *
+ * Design : SEDFXD4 *
+ * ---------------- */
+
+  cell(SEDFXD4) { 
+    /* end of Single-latch Test_cell */
+  }
+  /* ------------- *
+ * Design : TIEH *
+ * ------------- */
+
+  cell(TIEH) { 
+  }
+  /* ------------- *
+ * Design : TIEL *
+ * ------------- */
+
+  cell(TIEL) { 
+  }
+  /* --------------- *
+ * Design : XNR2D0 *
+ * --------------- */
+
+  cell(XNR2D0) { 
+  }
+  /* --------------- *
+ * Design : XNR2D1 *
+ * --------------- */
+
+  cell(XNR2D1) { 
+  }
+  /* --------------- *
+ * Design : XNR2D2 *
+ * --------------- */
+
+  cell(XNR2D2) { 
+  }
+  /* --------------- *
+ * Design : XNR2D4 *
+ * --------------- */
+
+  cell(XNR2D4) { 
+  }
+  /* --------------- *
+ * Design : XNR3D0 *
+ * --------------- */
+
+  cell(XNR3D0) { 
+  }
+  /* --------------- *
+ * Design : XNR3D1 *
+ * --------------- */
+
+  cell(XNR3D1) { 
+  }
+  /* --------------- *
+ * Design : XNR3D2 *
+ * --------------- */
+
+  cell(XNR3D2) { 
+  }
+  /* --------------- *
+ * Design : XNR3D4 *
+ * --------------- */
+
+  cell(XNR3D4) { 
+  }
+  /* --------------- *
+ * Design : XNR4D0 *
+ * --------------- */
+
+  cell(XNR4D0) { 
+  }
+  /* --------------- *
+ * Design : XNR4D1 *
+ * --------------- */
+
+  cell(XNR4D1) { 
+  }
+  /* --------------- *
+ * Design : XNR4D2 *
+ * --------------- */
+
+  cell(XNR4D2) { 
+  }
+  /* --------------- *
+ * Design : XNR4D4 *
+ * --------------- */
+
+  cell(XNR4D4) { 
+  }
+  /* --------------- *
+ * Design : XOR2D0 *
+ * --------------- */
+
+  cell(XOR2D0) { 
+  }
+  /* --------------- *
+ * Design : XOR2D1 *
+ * --------------- */
+
+  cell(XOR2D1) { 
+  }
+  /* --------------- *
+ * Design : XOR2D2 *
+ * --------------- */
+
+  cell(XOR2D2) { 
+  }
+  /* --------------- *
+ * Design : XOR2D4 *
+ * --------------- */
+
+  cell(XOR2D4) { 
+  }
+  /* --------------- *
+ * Design : XOR3D0 *
+ * --------------- */
+
+  cell(XOR3D0) { 
+  }
+  /* --------------- *
+ * Design : XOR3D1 *
+ * --------------- */
+
+  cell(XOR3D1) { 
+  }
+  /* --------------- *
+ * Design : XOR3D2 *
+ * --------------- */
+
+  cell(XOR3D2) { 
+  }
+  /* --------------- *
+ * Design : XOR3D4 *
+ * --------------- */
+
+  cell(XOR3D4) { 
+  }
+  /* --------------- *
+ * Design : XOR4D0 *
+ * --------------- */
+
+  cell(XOR4D0) { 
+  }
+  /* --------------- *
+ * Design : XOR4D1 *
+ * --------------- */
+
+  cell(XOR4D1) { 
+  }
+  /* --------------- *
+ * Design : XOR4D2 *
+ * --------------- */
+
+  cell(XOR4D2) { 
+  }
+  /* --------------- *
+ * Design : XOR4D4 *
+ * --------------- */
+
+  cell(XOR4D4) { 
+  }
+}

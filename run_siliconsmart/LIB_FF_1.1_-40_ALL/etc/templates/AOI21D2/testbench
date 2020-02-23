@@ -1,0 +1,39 @@
+set vectors ""
+
+## Cin__A1__lh__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 0001  1001  "
+
+## Cin__A1__hl__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 1001  0001  "
+
+## Cin__A2__lh__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 0001  0101  "
+
+## Cin__A2__hl__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 0101  0001  "
+
+## Cin__B__lh__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 1100  1110  "
+
+## Cin__B__hl__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 1110  1100  "
+
+## delay__A1__lh__ZN__hl__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 0101  1100  "
+
+## delay__A1__hl__ZN__lh__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 1100  0101  "
+
+## delay__A2__lh__ZN__hl__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 1001  1100  "
+
+## delay__A2__hl__ZN__lh__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 1100  1001  "
+
+## delay__B__lh__ZN__hl__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 0001  0010  "
+
+## delay__B__hl__ZN__lh__ACQ_1
+append vectors " {pins { A1 A2 B } { ZN }} 0010  0001  "
+
+return $vectors

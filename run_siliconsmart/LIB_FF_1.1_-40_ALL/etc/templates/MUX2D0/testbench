@@ -1,0 +1,45 @@
+set vectors ""
+
+## Cin__I0__lh__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0010  1010  "
+
+## Cin__I0__hl__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 1010  0010  "
+
+## Cin__I1__lh__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0000  0100  "
+
+## Cin__I1__hl__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0100  0000  "
+
+## Cin__S__lh__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0000  0010  "
+
+## Cin__S__hl__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0010  0000  "
+
+## delay__I0__lh__Z__lh__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0000  1001  "
+
+## delay__I0__hl__Z__hl__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 1001  0000  "
+
+## delay__I1__lh__Z__lh__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0010  0111  "
+
+## delay__I1__hl__Z__hl__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0111  0010  "
+
+## delay__S__lh__Z__lh__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0100  0111  "
+
+## delay__S__lh__Z__hl__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 1001  1010  "
+
+## delay__S__hl__Z__lh__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 1010  1001  "
+
+## delay__S__hl__Z__hl__ACQ_1
+append vectors " {pins { I0 I1 S } { Z }} 0111  0100  "
+
+return $vectors

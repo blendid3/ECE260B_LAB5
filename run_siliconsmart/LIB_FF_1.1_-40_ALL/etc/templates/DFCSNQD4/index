@@ -1,0 +1,458 @@
+Cin__CDN__hl__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__CDN__hl
+  } 
+  template Cin__CDN__hl__ACQ_1.t
+  test Cin__CDN__hl
+  when {1}
+} 
+Cin__CDN__lh_2__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__CDN__lh
+  } 
+  template Cin__CDN__lh_2__ACQ_1.t
+  test Cin__CDN__lh_2
+  when {1}
+} 
+Cin__CDN__lh__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__CDN__lh
+  } 
+  template Cin__CDN__lh__ACQ_1.t
+  test Cin__CDN__lh
+  when {1}
+} 
+Cin__CP__hl__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__CP__hl
+  } 
+  template Cin__CP__hl__ACQ_1.t
+  test Cin__CP__hl
+  when {1}
+} 
+Cin__CP__hl__ACQ_2 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__CP__hl
+  } 
+  template Cin__CP__hl__ACQ_2.t
+  test Cin__CP__hl
+  when {1}
+} 
+Cin__SDN__lh__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__SDN__lh
+  } 
+  template Cin__SDN__lh__ACQ_1.t
+  test Cin__SDN__lh
+  when {1}
+} 
+asynch_recover__CDN__lh__SDN__lh__ACQ_1 {
+  measType asynch_recover
+  pred {
+  } 
+  targets {
+    asynch_recover__CDN__lh__SDN__lh
+  } 
+  template asynch_recover__CDN__lh__SDN__lh__ACQ_1.t
+  test asynch_recover__CDN__lh__SDN__lh
+  when {1}
+} 
+asynch_recover__SDN__lh__CDN__lh__ACQ_1 {
+  measType asynch_recover
+  pred {
+  } 
+  targets {
+    asynch_recover__SDN__lh__CDN__lh
+  } 
+  template asynch_recover__SDN__lh__CDN__lh__ACQ_1.t
+  test asynch_recover__SDN__lh__CDN__lh
+  when {1}
+} 
+asynch_removal__CDN__lh__SDN__lh__ACQ_1 {
+  measType asynch_removal
+  pred {
+  } 
+  targets {
+    asynch_removal__CDN__lh__SDN__lh
+  } 
+  template asynch_removal__CDN__lh__SDN__lh__ACQ_1.t
+  test asynch_removal__CDN__lh__SDN__lh
+  when {1}
+} 
+asynch_removal__SDN__lh__CDN__lh__ACQ_1 {
+  measType asynch_removal
+  pred {
+  } 
+  targets {
+    asynch_removal__SDN__lh__CDN__lh
+  } 
+  template asynch_removal__SDN__lh__CDN__lh__ACQ_1.t
+  test asynch_removal__SDN__lh__CDN__lh
+  when {1}
+} 
+cmpw__CDN__hl__CDN__lh__ACQ_1 {
+  measType cmpw
+  pred {
+  } 
+  targets {
+    cmpw__CDN__hl__CDN__lh
+  } 
+  template cmpw__CDN__hl__CDN__lh__ACQ_1.t
+  test cmpw__CDN__hl__CDN__lh
+  when {1}
+} 
+cmpw__CP__lh__CP__hl__ACQ_1 {
+  measType cmpw
+  pred {
+  } 
+  targets {
+    cmpw__CP__lh__CP__hl
+  } 
+  template cmpw__CP__lh__CP__hl__ACQ_1.t
+  test cmpw__CP__lh__CP__hl
+  when {1}
+} 
+cmpw__SDN__hl__SDN__lh__ACQ_1 {
+  measType cmpw
+  pred {
+  } 
+  targets {
+    cmpw__SDN__hl__SDN__lh
+  } 
+  template cmpw__SDN__hl__SDN__lh__ACQ_1.t
+  test cmpw__SDN__hl__SDN__lh
+  when {1}
+} 
+combined_setup_hold__D__hl__CP__lh__ACQ_1 {
+  measType combined_setup_hold
+  pred {
+  } 
+  targets {
+    combined_setup_hold__D__hl__CP__lh
+  } 
+  template combined_setup_hold__D__hl__CP__lh__ACQ_1.t
+  test combined_setup_hold__D__hl__CP__lh
+  when {1}
+} 
+combined_setup_hold__D__lh__CP__lh__ACQ_1 {
+  measType combined_setup_hold
+  pred {
+  } 
+  targets {
+    combined_setup_hold__D__lh__CP__lh
+  } 
+  template combined_setup_hold__D__lh__CP__lh__ACQ_1.t
+  test combined_setup_hold__D__lh__CP__lh
+  when {1}
+} 
+delay__CDN__hl__Q__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__CDN__hl__Q__hl
+    Cin__CDN__hl
+    Tout__Q__hl
+    energy1__CDN__hl__Q__hl__vdd
+    energy1__CDN__hl__Q__hl__vss
+    energy__CDN__hl__Q__hl
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+    cap_energy__Q__hl
+  } 
+  template delay__CDN__hl__Q__hl__ACQ_1.t
+  test delay__CDN__hl__Q__hl
+  when {1}
+} 
+delay__CP__lh__Q__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__CP__lh__Q__hl
+    Cin__CP__lh
+    Tout__Q__hl
+    energy1__CP__lh__Q__hl__vdd
+    energy1__CP__lh__Q__hl__vss
+    energy__CP__lh__Q__hl
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+    cap_energy__Q__hl
+  } 
+  template delay__CP__lh__Q__hl__ACQ_1.t
+  test delay__CP__lh__Q__hl
+  when {1}
+} 
+delay__CP__lh__Q__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__CP__lh__Q__lh
+    Cin__CP__lh
+    Tout__Q__lh
+    energy1__CP__lh__Q__lh__vdd
+    energy1__CP__lh__Q__lh__vss
+    energy__CP__lh__Q__lh
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+    cap_energy__Q__lh
+  } 
+  template delay__CP__lh__Q__lh__ACQ_1.t
+  test delay__CP__lh__Q__lh
+  when {1}
+} 
+delay__SDN__hl__Q__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__SDN__hl__Q__lh
+    Cin__SDN__hl
+    Tout__Q__lh
+    energy1__SDN__hl__Q__lh__vdd
+    energy1__SDN__hl__Q__lh__vss
+    energy__SDN__hl__Q__lh
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+    cap_energy__Q__lh
+  } 
+  template delay__SDN__hl__Q__lh__ACQ_1.t
+  test delay__SDN__hl__Q__lh
+  when {1}
+} 
+energy__CDN__lh__Q__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__CDN__lh__Q__lh
+    energy1__CDN__lh__Q__lh__vdd
+    energy1__CDN__lh__Q__lh__vss
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+    cap_energy__Q__lh
+  } 
+  template energy__CDN__lh__Q__lh__ACQ_1.t
+  test energy__CDN__lh__Q__lh
+  when {1}
+} 
+energy__CP__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__CP__hl
+    energy1__CP__hl__vdd
+    energy1__CP__hl__vss
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+  } 
+  template energy__CP__hl__ACQ_1.t
+  test energy__CP__hl
+  when {1}
+} 
+energy__CP__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__CP__lh
+    energy1__CP__lh__vdd
+    energy1__CP__lh__vss
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+  } 
+  template energy__CP__lh__ACQ_1.t
+  test energy__CP__lh
+  when {1}
+} 
+energy__D__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__D__hl
+    energy1__D__hl__vdd
+    energy1__D__hl__vss
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+  } 
+  template energy__D__hl__ACQ_1.t
+  test energy__D__hl
+  when {1}
+} 
+energy__D__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__D__lh
+    energy1__D__lh__vdd
+    energy1__D__lh__vss
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+  } 
+  template energy__D__lh__ACQ_1.t
+  test energy__D__lh
+  when {1}
+} 
+energy__SDN__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__SDN__hl
+    energy1__SDN__hl__vdd
+    energy1__SDN__hl__vss
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+  } 
+  template energy__SDN__hl__ACQ_1.t
+  test energy__SDN__hl
+  when {1}
+} 
+energy__SDN__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__SDN__lh
+    energy1__SDN__lh__vdd
+    energy1__SDN__lh__vss
+    leakage_power1__vdd
+    leakage_power1__vss
+    leakage_power2__vdd
+    leakage_power2__vss
+  } 
+  template energy__SDN__lh__ACQ_1.t
+  test energy__SDN__lh
+  when {1}
+} 
+leakage_power__ACQ_1 {
+  measType leakage_power
+  pred {
+  } 
+  targets {
+    leakage_power
+  } 
+  template leakage_power__ACQ_1.t
+  test leakage_power
+  when {!CDN !CP !D !SDN, !CDN !CP !D SDN, !CDN !CP D !SDN, !CDN !CP D SDN, !CDN CP !D !SDN, !CDN CP !D SDN, !CDN CP D !SDN, !CDN CP D SDN}
+} 
+leakage_power__ACQ_10 {
+  measType leakage_power
+  pred {
+  } 
+  targets {
+    leakage_power
+  } 
+  template leakage_power__ACQ_10.t
+  test leakage_power
+  when {CDN !CP !D SDN, CDN !CP D SDN, CDN CP !D SDN, CDN CP D SDN}
+} 
+leakage_power__ACQ_9 {
+  measType leakage_power
+  pred {
+  } 
+  targets {
+    leakage_power
+  } 
+  template leakage_power__ACQ_9.t
+  test leakage_power
+  when {CDN !CP !D !SDN, CDN !CP D !SDN, CDN CP !D !SDN, CDN CP D !SDN}
+} 
+ncmpw__CP__hl__CP__lh__ACQ_1 {
+  measType ncmpw
+  pred {
+  } 
+  targets {
+    ncmpw__CP__hl__CP__lh
+  } 
+  template ncmpw__CP__hl__CP__lh__ACQ_1.t
+  test ncmpw__CP__hl__CP__lh
+  when {1}
+} 
+recover__CDN__lh__CP__lh__ACQ_1 {
+  measType recover
+  pred {
+  } 
+  targets {
+    recover__CDN__lh__CP__lh
+  } 
+  template recover__CDN__lh__CP__lh__ACQ_1.t
+  test recover__CDN__lh__CP__lh
+  when {1}
+} 
+recover__SDN__lh__CP__lh__ACQ_1 {
+  measType recover
+  pred {
+  } 
+  targets {
+    recover__SDN__lh__CP__lh
+  } 
+  template recover__SDN__lh__CP__lh__ACQ_1.t
+  test recover__SDN__lh__CP__lh
+  when {1}
+} 
+removal__CDN__lh__CP__lh__ACQ_1 {
+  measType removal
+  pred {
+  } 
+  targets {
+    removal__CDN__lh__CP__lh
+  } 
+  template removal__CDN__lh__CP__lh__ACQ_1.t
+  test removal__CDN__lh__CP__lh
+  when {1}
+} 
+removal__SDN__lh__CP__lh__ACQ_1 {
+  measType removal
+  pred {
+  } 
+  targets {
+    removal__SDN__lh__CP__lh
+  } 
+  template removal__SDN__lh__CP__lh__ACQ_1.t
+  test removal__SDN__lh__CP__lh
+  when {1}
+} 
+

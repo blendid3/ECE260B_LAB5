@@ -1,0 +1,305 @@
+----------------------------------------------------------------------
+Info:    Log written by SiliconSmart version L-2016.06-SP1-2 on Fri Feb 21 15:13:20 2020
+Info:    Build date: Dec 07, 2016 16:59:49
+Info:    SiliconSmart Path: /software/nonrdist/siliconsmart/linux64/bin/siliconsmart
+Info:    Host Name: ieng6-249.ucsd.edu, User Name: haz023, PID: 4461
+Info:    CPU: 4 x 2000 MHz, Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz (2 socket, 2 core)
+Info:    Memory: 32 GB RAM, 2 GB Swap
+Info:    Directory: /home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart/LIB_FF_1.1_-40_ALL
+Info:    Maximum virtual memory size: 576.57MB
+Info:    Fri Feb 21 15:13:20 2020: Establishing connection to license server
+Info:    Command-line: /software/nonrdist/siliconsmart/linux64/bin/siliconsmart run.tcl
+Info:    The char directory is /home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart/LIB_FF_1.1_-40_ALL
+Info:    ================================================
+Info:    Fri Feb 21 15:13:21 PST 2020: Begin import stage
+Info:    Importing liberty file /home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart/LIB_FF_1.1_-40_ALL/./ref.lib... (SMSC-45)
+Info:    Reading /home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart/LIB_FF_1.1_-40_ALL/./ref.lib ...
+Info:    Netlist for cell AN2D0 already exists, skipped. (CI-34)
+Info:    Importing cell AN2D0... (CI-69)
+Info:    Netlist for cell AN2D1 already exists, skipped. (CI-34)
+Info:    Importing cell AN2D1... (CI-69)
+Info:    Netlist for cell AN2D2 already exists, skipped. (CI-34)
+Info:    Importing cell AN2D2... (CI-69)
+Info:    Netlist for cell AN2D4 already exists, skipped. (CI-34)
+Info:    Importing cell AN2D4... (CI-69)
+Info:    Netlist for cell AN2D8 already exists, skipped. (CI-34)
+Info:    Importing cell AN2D8... (CI-69)
+Info:    Netlist for cell AN2XD1 already exists, skipped. (CI-34)
+Info:    Importing cell AN2XD1... (CI-69)
+Info:    Netlist for cell AOI21D0 already exists, skipped. (CI-34)
+Info:    Importing cell AOI21D0... (CI-69)
+Info:    Netlist for cell AOI21D1 already exists, skipped. (CI-34)
+Info:    Importing cell AOI21D1... (CI-69)
+Info:    Netlist for cell AOI21D2 already exists, skipped. (CI-34)
+Info:    Importing cell AOI21D2... (CI-69)
+Info:    Netlist for cell AOI21D4 already exists, skipped. (CI-34)
+Info:    Importing cell AOI21D4... (CI-69)
+Info:    Netlist for cell BUFFD0 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD0... (CI-69)
+Info:    Netlist for cell BUFFD1 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD1... (CI-69)
+Info:    Netlist for cell BUFFD2 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD2... (CI-69)
+Info:    Netlist for cell BUFFD3 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD3... (CI-69)
+Info:    Netlist for cell BUFFD4 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD4... (CI-69)
+Info:    Netlist for cell BUFFD6 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD6... (CI-69)
+Info:    Netlist for cell BUFFD8 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD8... (CI-69)
+Info:    Netlist for cell BUFFD12 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD12... (CI-69)
+Info:    Netlist for cell BUFFD16 already exists, skipped. (CI-34)
+Info:    Importing cell BUFFD16... (CI-69)
+Info:    Netlist for cell INVD0 already exists, skipped. (CI-34)
+Info:    Importing cell INVD0... (CI-69)
+Info:    Netlist for cell INVD1 already exists, skipped. (CI-34)
+Info:    Importing cell INVD1... (CI-69)
+Info:    Netlist for cell INVD2 already exists, skipped. (CI-34)
+Info:    Importing cell INVD2... (CI-69)
+Info:    Netlist for cell INVD3 already exists, skipped. (CI-34)
+Info:    Importing cell INVD3... (CI-69)
+Info:    Netlist for cell INVD4 already exists, skipped. (CI-34)
+Info:    Importing cell INVD4... (CI-69)
+Info:    Netlist for cell INVD6 already exists, skipped. (CI-34)
+Info:    Importing cell INVD6... (CI-69)
+Info:    Netlist for cell INVD8 already exists, skipped. (CI-34)
+Info:    Importing cell INVD8... (CI-69)
+Info:    Netlist for cell INVD12 already exists, skipped. (CI-34)
+Info:    Importing cell INVD12... (CI-69)
+Info:    Netlist for cell INVD16 already exists, skipped. (CI-34)
+Info:    Importing cell INVD16... (CI-69)
+Info:    Netlist for cell INVD20 already exists, skipped. (CI-34)
+Info:    Importing cell INVD20... (CI-69)
+Info:    Netlist for cell INVD24 already exists, skipped. (CI-34)
+Info:    Importing cell INVD24... (CI-69)
+Info:    Netlist for cell MUX2D0 already exists, skipped. (CI-34)
+Info:    Importing cell MUX2D0... (CI-69)
+Info:    Netlist for cell MUX2D1 already exists, skipped. (CI-34)
+Info:    Importing cell MUX2D1... (CI-69)
+Info:    Netlist for cell MUX2D2 already exists, skipped. (CI-34)
+Info:    Importing cell MUX2D2... (CI-69)
+Info:    Netlist for cell MUX2D4 already exists, skipped. (CI-34)
+Info:    Importing cell MUX2D4... (CI-69)
+Info:    Netlist for cell ND2D0 already exists, skipped. (CI-34)
+Info:    Importing cell ND2D0... (CI-69)
+Info:    Netlist for cell ND2D1 already exists, skipped. (CI-34)
+Info:    Importing cell ND2D1... (CI-69)
+Info:    Netlist for cell ND2D2 already exists, skipped. (CI-34)
+Info:    Importing cell ND2D2... (CI-69)
+Info:    Netlist for cell ND2D3 already exists, skipped. (CI-34)
+Info:    Importing cell ND2D3... (CI-69)
+Info:    Netlist for cell ND2D4 already exists, skipped. (CI-34)
+Info:    Importing cell ND2D4... (CI-69)
+Info:    Netlist for cell ND2D8 already exists, skipped. (CI-34)
+Info:    Importing cell ND2D8... (CI-69)
+Info:    Netlist for cell NR2D0 already exists, skipped. (CI-34)
+Info:    Importing cell NR2D0... (CI-69)
+Info:    Netlist for cell NR2D1 already exists, skipped. (CI-34)
+Info:    Importing cell NR2D1... (CI-69)
+Info:    Netlist for cell NR2D2 already exists, skipped. (CI-34)
+Info:    Importing cell NR2D2... (CI-69)
+Info:    Netlist for cell NR2D3 already exists, skipped. (CI-34)
+Info:    Importing cell NR2D3... (CI-69)
+Info:    Netlist for cell NR2D4 already exists, skipped. (CI-34)
+Info:    Importing cell NR2D4... (CI-69)
+Info:    Netlist for cell NR2D8 already exists, skipped. (CI-34)
+Info:    Importing cell NR2D8... (CI-69)
+Info:    Netlist for cell OAI21D0 already exists, skipped. (CI-34)
+Info:    Importing cell OAI21D0... (CI-69)
+Info:    Netlist for cell OAI21D1 already exists, skipped. (CI-34)
+Info:    Importing cell OAI21D1... (CI-69)
+Info:    Netlist for cell OAI21D2 already exists, skipped. (CI-34)
+Info:    Importing cell OAI21D2... (CI-69)
+Info:    Netlist for cell OAI21D4 already exists, skipped. (CI-34)
+Info:    Importing cell OAI21D4... (CI-69)
+Info:    Netlist for cell OR2D0 already exists, skipped. (CI-34)
+Info:    Importing cell OR2D0... (CI-69)
+Info:    Netlist for cell OR2D1 already exists, skipped. (CI-34)
+Info:    Importing cell OR2D1... (CI-69)
+Info:    Netlist for cell OR2D2 already exists, skipped. (CI-34)
+Info:    Importing cell OR2D2... (CI-69)
+Info:    Netlist for cell OR2D4 already exists, skipped. (CI-34)
+Info:    Importing cell OR2D4... (CI-69)
+Info:    Netlist for cell OR2XD1 already exists, skipped. (CI-34)
+Info:    Importing cell OR2XD1... (CI-69)
+Info:    Netlist for cell XNR2D0 already exists, skipped. (CI-34)
+Info:    Importing cell XNR2D0... (CI-69)
+Info:    Netlist for cell XNR2D1 already exists, skipped. (CI-34)
+Info:    Importing cell XNR2D1... (CI-69)
+Info:    Netlist for cell XNR2D2 already exists, skipped. (CI-34)
+Info:    Importing cell XNR2D2... (CI-69)
+Info:    Netlist for cell XNR2D4 already exists, skipped. (CI-34)
+Info:    Importing cell XNR2D4... (CI-69)
+Info:    Netlist for cell XOR2D0 already exists, skipped. (CI-34)
+Info:    Importing cell XOR2D0... (CI-69)
+Info:    Netlist for cell XOR2D1 already exists, skipped. (CI-34)
+Info:    Importing cell XOR2D1... (CI-69)
+Info:    Netlist for cell XOR2D2 already exists, skipped. (CI-34)
+Info:    Importing cell XOR2D2... (CI-69)
+Info:    Netlist for cell DFCSNQD1 already exists, skipped. (CI-34)
+Info:    Importing cell DFCSNQD1... (CI-69)
+Info:    Netlist for cell DFCSNQD2 already exists, skipped. (CI-34)
+Info:    Importing cell DFCSNQD2... (CI-69)
+Info:    Netlist for cell DFCSNQD4 already exists, skipped. (CI-34)
+Info:    Importing cell DFCSNQD4... (CI-69)
+Info:    Netlist for cell LHQD2 already exists, skipped. (CI-34)
+Info:    Importing cell LHQD2... (CI-69)
+Info:    Completed 66 tasks (66 successful, 0 failed, 0 killed) covering 66 cell(s). (SMSC-86)
+Info:    Results summary: (SMSC-114)
+Info:      Cell AN2D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AN2D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AN2D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AN2D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AN2D8: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AN2XD1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AOI21D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AOI21D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AOI21D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell AOI21D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD3: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD6: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD8: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD12: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell BUFFD16: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD3: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD6: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD8: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD12: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD16: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD20: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell INVD24: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell MUX2D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell MUX2D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell MUX2D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell MUX2D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell ND2D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell ND2D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell ND2D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell ND2D3: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell ND2D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell ND2D8: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell NR2D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell NR2D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell NR2D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell NR2D3: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell NR2D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell NR2D8: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OAI21D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OAI21D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OAI21D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OAI21D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OR2D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OR2D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OR2D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OR2D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell OR2XD1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell XNR2D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell XNR2D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell XNR2D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell XNR2D4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell XOR2D0: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell XOR2D1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell XOR2D2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell DFCSNQD1: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell DFCSNQD2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell DFCSNQD4: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:      Cell LHQD2: 1 total tasks, 1 completed (0 cache hits), 0 killed, 0 failed, 0 remaining. (SMSC-115)
+Info:    Fri Feb 21 15:13:34 PST 2020: Done import stage (Elapsed: 13 seconds | 0.00 hours  Memory: 705.52MB)
+Info:    ====================================================================================================
+Info:    ===================================================
+Info:    Fri Feb 21 15:13:34 PST 2020: Begin configure stage
+Info:    Configure starting, distributing work via adaptive job manager... (IOSH-29)
+Info:    Start generating configuration tasks. ... (SMSC-63)
+Info:    Generated 66 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Using 25 standalone slots
+Info:    [CDPL] Tasks: 4/66, (6.1%, 0 Failed); Active Workers: 6, Pending Workers: 19, Elapsed: 0m00s
+Info:    [CDPL] Tasks: 66/66, (100.0%, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 0m30s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Fri Feb 21 15:14:15 PST 2020: Done configure stage (Elapsed: 41 seconds | 0.01 hours  Memory: 737.55MB)
+Info:    =======================================================================================================
+Info:    ======================================================
+Info:    Fri Feb 21 15:14:15 PST 2020: Begin characterize stage
+Info:    Simulator used is hspice K-2015.06-3
+Info:    Simulator command is /software/nonrdist64/hspice/linux64/hspice
+Info:    Optimizing cell order for efficiency...
+Info:    Checking templates...
+Info:    Loading information for 66 cells... (SMSC-62)
+Info:    Start generating characterization tasks. ... (SMSC-63)
+Info:    Generated 675 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Characterization starting, distributing work via adaptive job manager... (IOSH-29)
+Info:    Using 25 standalone slots
+Info:    [CDPL] Tasks: 1/675, (0.1%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 0m00s
+Warning: DFCSNQD1: leakage_power__ACQ_10 state: CDN !CP !D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD1: leakage_power__ACQ_10 state: CDN !CP D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD1: leakage_power__ACQ_10 state: CDN CP !D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD1: leakage_power__ACQ_10 state: CDN CP D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Info:    [CDPL] Tasks: 30/675, (4.4%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 0m30s
+Warning: DFCSNQD2: leakage_power__ACQ_10 state: CDN !CP !D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD2: leakage_power__ACQ_10 state: CDN !CP D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD2: leakage_power__ACQ_10 state: CDN CP !D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD2: leakage_power__ACQ_10 state: CDN CP D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Info:    [CDPL] Tasks: 37/675, (5.5%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 1m00s
+Info:    [CDPL] Tasks: 58/675, (8.6%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 1m30s
+Warning: DFCSNQD4: leakage_power__ACQ_10 state: CDN !CP !D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD4: leakage_power__ACQ_10 state: CDN CP !D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: DFCSNQD4: leakage_power__ACQ_10 state: CDN CP D SDN: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Info:    [CDPL] Tasks: 77/675, (11.4%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 2m00s
+Warning: LHQD2: leakage_power__ACQ_1 state: !D !E: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Warning: LHQD2: leakage_power__ACQ_3 state: D !E: leakage current does not sum to 0 (tolerance 1.0e-6) 
+Info:    [CDPL] Tasks: 93/675, (13.8%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 2m30s
+Info:    [CDPL] Tasks: 126/675, (18.7%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 3m00s
+Info:    [CDPL] Tasks: 164/675, (24.3%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 3m31s
+Info:    [CDPL] Tasks: 192/675, (28.4%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 3m54s
+Info:    [CDPL] Tasks: 239/675, (35.4%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 4m24s
+Info:    [CDPL] Tasks: 304/675, (45.0%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 4m55s
+Info:    [CDPL] Tasks: 372/675, (55.1%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 5m24s
+Info:    [CDPL] Tasks: 393/675, (58.2%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 8m06s
+Info:    [CDPL] Tasks: 394/675, (58.4%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 8m06s
+Info:    [CDPL] Tasks: 476/675, (70.5%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 8m36s
+Info:    [CDPL] Tasks: 519/675, (76.9%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 8m55s
+Info:    [CDPL] Tasks: 565/675, (83.7%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 9m26s
+Info:    [CDPL] Tasks: 646/675, (95.7%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 9m56s
+Info:    [CDPL] Tasks: 675/675, (100.0%, 0 Cached, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 10m26s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Fri Feb 21 15:24:52 PST 2020: Done characterize stage (Elapsed: 637 seconds | 0.18 hours  Memory: 737.55MB)
+Info:    ===========================================================================================================
+Info:    ===============================================
+Info:    Fri Feb 21 15:24:52 PST 2020: Begin model stage
+Warning: The -recharacterize switch is obsolete and is now the default. The -create_new_model switch can be used to turn off recharacterization. (IOSH-47)
+Info:    Optimizing cell order for efficiency...
+Info:    Loading information for 66 cells... (SMSC-62)
+Info:    Start generating modeling tasks. ... (SMSC-63)
+Info:    Generated 66 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Modeling starting, distributing work via adaptive job manager... (IOSH-29)
+Info:    Reading /home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart/LIB_FF_1.1_-40_ALL/models/liberty/cellmodels/header.lib ...
+Info:    Using 25 standalone slots
+Info:    [CDPL] Tasks: 0/66, (0.0%, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 0m00s
+Warning: Power model 937 (internal_power_group:935) for rise_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Warning: Power model 938 (internal_power_group:936) for fall_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Warning: Power model 937 (internal_power_group:935) for rise_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Warning: Power model 938 (internal_power_group:936) for fall_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Warning: Power model 937 (internal_power_group:935) for rise_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Warning: Power model 938 (internal_power_group:936) for fall_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Warning: Power model 937 (internal_power_group:935) for rise_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Warning: Power model 938 (internal_power_group:936) for fall_power for related_pin S to Z  with when: none could not be recharacterized, therefore deleting this model..
+Info:    [CDPL] Tasks: 66/66, (100.0%, 0 Failed); Active Workers: 25, Pending Workers: 0, Elapsed: 0m30s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Creating Liberty file "/home/linux/ieng6/ee260bwi20/haz023/lab5/run_siliconsmart/LIB_FF_1.1_-40_ALL/models/liberty/FF_1.1_-40_ALL_FF_1.1_-40_ALL.lib".
+Info:    re-positioning normalized_driver_waveform (ndw_ntin_nvolt_7x13) after templates
+Info:    Library merging time: 0.051 secs.
+Info:    Fri Feb 21 15:25:28 PST 2020: Done model stage (Elapsed: 36 seconds | 0.01 hours  Memory: 737.55MB)
+Info:    ===================================================================================================
+Info:    [CDPL] Shutting down CDPL master.
