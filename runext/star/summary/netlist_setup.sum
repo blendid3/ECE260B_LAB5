@@ -1,0 +1,21 @@
+
+
+                         StarRC (TM)
+             Copyright (c) 1999-2013 Synopsys, Inc.
+                      All Rights Reserved
+
+
+ExecName: /software/nonrdist/starrc/linux_starrc/bin/StarXtract
+Version: H-2013.06-SP3
+Built on: Oct 16 2013 23:40:55
+Start Time: Sun Feb 23 12:58:32 2020
+
+Host ............ ieng6-ece-09.ucsd.edu
+
+  
+ReadHNdb            Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=59.8  
+XtrNet              Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=59.8  
+NETLIST_SELECT_NETS Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=59.8  
+WrtSelectNets       Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=59.8  
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=59.8  

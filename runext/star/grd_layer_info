@@ -1,0 +1,22 @@
+CONDUCTOR OD 1
+CONDUCTOR poly 2
+CONDUCTOR metal1 3
+CONDUCTOR metal2 4
+CONDUCTOR metal3 5
+CONDUCTOR metal4 6
+CONDUCTOR metal5 7
+CONDUCTOR metal6 8
+CONDUCTOR metal7 9
+CONDUCTOR metal8 10
+CONDUCTOR metal9 11
+VIA polyCont 2 3
+VIA odCont 1 3
+VIA weltap 0 1
+VIA via8 10 11
+VIA via7 9 10
+VIA via6 8 9
+VIA via5 7 8
+VIA via4 6 7
+VIA via3 5 6
+VIA via2 4 5
+VIA via1 3 4

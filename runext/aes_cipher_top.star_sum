@@ -1,0 +1,126 @@
+
+
+                         StarRC (TM)
+             Copyright (c) 1999-2013 Synopsys, Inc.
+                      All Rights Reserved
+
+
+ExecName: /software/nonrdist/starrc/linux_starrc/bin/StarXtract
+Version: H-2013.06-SP3
+Built on: Oct 16 2013 23:40:55
+Start Time: Sun Feb 23 12:58:17 2020
+
+Host ............ ieng6-ece-09.ucsd.edu
+
+xTractorName:/software/nonrdist/starrc/linux_starrc/bin/xTractor
+Version: H-2013.06-SP3
+Built on: Oct 16 2013 23:41:02
+Start Time: Sun Feb 23 12:58:17 2020
+
+Block ........... aes_cipher_top
+Star Directory .. /home/linux/ieng6/ee260bwi20/haz023/lab5/runext/star
+LEF file ........ '/home/linux/ieng6/ee260bwi20/public/data/libraries/lef/tcbn65gplus_8lmT2.lef' (SX-2066)
+Top DEF File .... '/home/linux/ieng6/ee260bwi20/haz023/lab5/aes_cipher_top/aes_cipher_top.def' (SX-2068)
+
+Map Layers:  Sun Feb 23 12:58:19 2020
+  Warnings: 1    Errors: 0    (See file summary/layers.sum)
+  Layers        Elp=00:00:01 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=58.8  
+Done
+
+Create Models:  Sun Feb 23 12:58:21 2020
+  Warnings: 0    Errors: 0
+  Models        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=41.7  
+Done
+
+Build HN:  Sun Feb 23 12:58:24 2020
+  Warnings: 0    Errors: 0
+  HN            Elp=00:00:01 Cpu=00:00:00 Usr=0.6    Sys=0.0    Mem=62.4  
+Done
+
+Process Cells:  Sun Feb 23 12:58:26 2020
+  Warnings: 0    Errors: 0
+  Cells         Elp=00:00:02 Cpu=00:00:01 Usr=1.0    Sys=0.3    Mem=99.8  
+Done
+
+Translate DB:  Sun Feb 23 12:58:29 2020
+  Warnings: 0    Errors: 0
+  Translate     Elp=00:00:02 Cpu=00:00:00 Usr=0.4    Sys=0.2    Mem=77.6  
+Done
+
+Netlist Setup:  Sun Feb 23 12:58:32 2020
+  Warnings: 0    Errors: 0
+  NetlistSetup  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=59.8  
+Done
+
+xTract DB:  Sun Feb 23 12:58:34 2020
+Completed   0%  Time=00:00:00  RemainingTime=00:00:37  Mem=351.414
+Completed   1%  Time=00:00:00  RemainingTime=00:00:32  Mem=352.203
+Completed   2%  Time=00:00:01  RemainingTime=00:00:50  Mem=354.609
+Completed   3%  Time=00:00:01  RemainingTime=00:00:44  Mem=355.555
+WARNING: SMIN: Found less than minimum spacing. SMIN: 0.09, found: 0.07 (EX-702)
+Completed   4%  Time=00:00:02  RemainingTime=00:00:48  Mem=358.125
+Completed   5%  Time=00:00:02  RemainingTime=00:00:45  Mem=359.91
+Completed  10%  Time=00:00:03  RemainingTime=00:00:32  Mem=365.195
+Completed  15%  Time=00:00:06  RemainingTime=00:00:32  Mem=377.191
+Completed  20%  Time=00:00:07  RemainingTime=00:00:31  Mem=386.004
+Completed  25%  Time=00:00:09  RemainingTime=00:00:27  Mem=395.312
+Completed  30%  Time=00:00:11  RemainingTime=00:00:24  Mem=404.676
+Completed  35%  Time=00:00:13  RemainingTime=00:00:23  Mem=414.445
+Completed  40%  Time=00:00:14  RemainingTime=00:00:21  Mem=423.438
+Completed  45%  Time=00:00:15  RemainingTime=00:00:19  Mem=432.469
+Completed  50%  Time=00:00:17  RemainingTime=00:00:17  Mem=441.438
+Completed  55%  Time=00:00:19  RemainingTime=00:00:16  Mem=451.465
+Completed  60%  Time=00:00:21  RemainingTime=00:00:13  Mem=460.223
+Completed  65%  Time=00:00:22  RemainingTime=00:00:12  Mem=469.652
+Completed  70%  Time=00:00:24  RemainingTime=00:00:10  Mem=478.898
+Completed  75%  Time=00:00:26  RemainingTime=00:00:08  Mem=488.668
+Completed  80%  Time=00:00:27  RemainingTime=00:00:07  Mem=497.793
+Completed  85%  Time=00:00:29  RemainingTime=00:00:04  Mem=505.879
+Completed  90%  Time=00:00:30  RemainingTime=00:00:04  Mem=515.684
+Completed  95%  Time=00:00:32  RemainingTime=00:00:01  Mem=524.609
+Completed 100%  Time=00:00:34  RemainingTime=00:00:00  Mem=533.984
+  Extracted 5722204 capacitors, 693590 resistors, 0 reluctors, 681675 nodes
+   Reduced to 63771 nodes,  (90.645%)
+   Reduced to 50905 resistors,  (92.6606%)
+   Reduced to 58147 capacitors,  (98.9838%)
+   Warnings: 1    Errors: 0    (See file summary/xtract.sum)
+  xTract        Elp=00:00:43 Cpu=00:00:42 Usr=40.0   Sys=2.5    Mem=544.5 
+Done
+
+Report Violations:  Sun Feb 23 12:59:19 2020
+WARNING: Found shorted nets (see file shorts.sum). The capacitances of these nets may be unreliable
+         due to the shorts. (SX-0955)
+WARNING: Found less than minimum spacing (see file smin.sum). (SX-0961)
+  Warnings: 2    Errors: 0    (See file summary/report_violations.sum)
+  ReportViolations Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=0.0   
+Done
+
+Netlist DB:  Sun Feb 23 12:59:21 2020
+WARNING: found open net(s) in the design. please check opens.sum file. (EX-414)
+  Warnings: 1    Errors: 0    (See file summary/netlist.sum)
+  Netlist       Elp=00:00:03 Cpu=00:00:02 Usr=2.1    Sys=0.3    Mem=69.7  
+Done
+  
+Layers           Elp=00:00:01 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=58.8  
+Models           Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=41.7  
+HN               Elp=00:00:01 Cpu=00:00:00 Usr=0.6    Sys=0.0    Mem=62.4  
+Cells            Elp=00:00:02 Cpu=00:00:01 Usr=1.0    Sys=0.3    Mem=99.8  
+Translate        Elp=00:00:02 Cpu=00:00:00 Usr=0.4    Sys=0.2    Mem=77.6  
+NetlistSetup     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=59.8  
+xTract           Elp=00:00:43 Cpu=00:00:42 Usr=40.0   Sys=2.5    Mem=544.5 
+ReportViolations Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=0.0   
+Netlist          Elp=00:00:03 Cpu=00:00:02 Usr=2.1    Sys=0.3    Mem=69.7  
+  
+Done          Elp=00:00:52 Cpu=00:00:47 Usr=44.6   Sys=3.3    Mem=544.5 
+
+End Time: Sun Feb 23 12:59:28 2020
+
+Message Summary:
+----------------------------------------------------------------------------------------------
+EX-414  (x   1)|Warning      |FOUND OPEN NET(S) IN THE DESIGN. PLEASE CHECK OPENS.SUM FILE.
+EX-702  (x   1)|Warning      |SMIN: FOUND LESS THAN ()MINIMUM SPACING. SMIN: (), FOUND: ()
+SX-0955 (x   1)|Warning      |FOUND SHORTED NETS (SEE FILE SHORTS.SUM). THE CAPACITANCES OF THESE NETS MAY BE UNRELIABLE DUE TO THE SHORTS.
+SX-0961 (x   1)|Warning      |FOUND LESS THAN MINIMUM SPACING (SEE FILE SMIN.SUM).
+SX-2066 (x   1)|Information  |LEF FILE ........ '()'
+SX-2068 (x   1)|Information  |TOP DEF FILE .... '()'
+

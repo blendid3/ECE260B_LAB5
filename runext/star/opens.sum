@@ -1,0 +1,63 @@
+There are "OPEN NETS". 
+"Open nets" have the same net name/number however not resistively connected;
+they are formed by more than one "Resistively Connected Groups" (RCGs).
+ You can find the open net names below.
+StarRC will never be able to determine where the source of an open net is. as such,
+StarRC has randomly chosen nodes on the open net between which a shorting ressistor
+will be inserted. The coordinates listed in this file for the shorting resistors will
+vary based on the settings for REDUCTION, REDUCTION_MAX_DELAY_ERROR, MODE, EXTRACTION.
+
+OPEN net: clk__L3_N1  (2 RCGs) :
+	shorting resistor: 24 (resistance=0.01,width=100) is inserted between nodes *54479:CP (located at (178700,235800)) and *69543:CP (located at (166750,235920))
+OPEN net: clk__L3_N2  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *69559:CP (located at (200300,239400)) and *54485:CP (located at (190050,235920))
+OPEN net: clk__L3_N3  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *66597:CP (located at (223950,239510)) and *69577:CP (located at (214650,233905))
+OPEN net: clk__L3_N4  (3 RCGs) :
+	shorting resistor: 11 (resistance=0.01,width=100) is inserted between nodes *54195:Z (located at (212300,217500)) and *54523:CP (located at (209850,225120))
+	shorting resistor: 29 (resistance=0.01,width=100) is inserted between nodes *54523:CP (located at (209850,225120)) and *69517:CP (located at (207850,226705))
+OPEN net: clk__L3_N5  (2 RCGs) :
+	shorting resistor: 11 (resistance=0.01,width=100) is inserted between nodes *54504:CP (located at (208250,135000)) and *54512:CP (located at (212250,142320))
+OPEN net: clk__L3_N6  (3 RCGs) :
+	shorting resistor: 25 (resistance=0.01,width=100) is inserted between nodes *54554:CP (located at (197050,126155)) and *54553:CP (located at (192250,133280))
+	shorting resistor: 26 (resistance=0.01,width=100) is inserted between nodes *54496:CP (located at (194050,136880)) and *54553:CP (located at (192250,133280))
+OPEN net: clk__L3_N10  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *69521:CP (located at (184350,126110)) and *69552:CP (located at (178050,125905))
+OPEN net: clk__L3_N11  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *66614:CP (located at (164700,149600)) and *69555:CP (located at (160950,135120))
+OPEN net: clk__L3_N13  (3 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *66602:CP (located at (212300,182000)) and *54517:CP (located at (215450,196320))
+	shorting resistor: 28 (resistance=0.01,width=100) is inserted between nodes *54483:CP (located at (217150,192720)) and *54517:CP (located at (215450,196320))
+OPEN net: clk__L3_N16  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *54549:CP (located at (128500,185400)) and *69467:CP (located at (116650,196320))
+OPEN net: clk__L3_N17  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *69465:CP (located at (103850,207110)) and *69497:CP (located at (101250,208705))
+OPEN net: clk__L3_N20  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *54309:CP (located at (114100,72000)) and *54562:CP (located at (112850,54080))
+OPEN net: clk__L3_N23  (2 RCGs) :
+	shorting resistor: 8 (resistance=0.01,width=100) is inserted between nodes *54475:CP (located at (178300,169200)) and *54582:CP (located at (172450,160320))
+OPEN net: clk__L3_N25  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *54216:Z (located at (203300,162375)) and *54521:CP (located at (202850,163920))
+OPEN net: clk__L3_N26  (2 RCGs) :
+	shorting resistor: 10 (resistance=0.01,width=100) is inserted between nodes *54286:CP (located at (168900,167600)) and *54558:CP (located at (167250,160320))
+OPEN net: clk__L3_N28  (3 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *69518:CP (located at (221100,176400)) and *54511:CP (located at (205650,171120))
+	shorting resistor: 2 (resistance=0.01,width=100) is inserted between nodes *69518:CP (located at (221100,176400)) and *69571:CP (located at (204250,165680))
+OPEN net: clk__L3_N30  (3 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *54241:CP (located at (176300,97400)) and *54586:CP (located at (173250,111680))
+	shorting resistor: 25 (resistance=0.01,width=100) is inserted between nodes *54601:CP (located at (178450,111680)) and *54586:CP (located at (173250,111680))
+OPEN net: clk__L3_N35  (3 RCGs) :
+	shorting resistor: 14 (resistance=0.01,width=100) is inserted between nodes *54307:CP (located at (168900,102600)) and *54283:CP (located at (168650,118705))
+	shorting resistor: 25 (resistance=0.01,width=100) is inserted between nodes *54283:CP (located at (168650,118705)) and *54245:CP (located at (168050,115105))
+OPEN net: clk__L3_N37  (3 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *54228:Z (located at (189100,237300)) and *54473:CP (located at (164450,217920))
+	shorting resistor: 24 (resistance=0.01,width=100) is inserted between nodes *54602:CP (located at (166450,216080)) and *54473:CP (located at (164450,217920))
+OPEN net: clk__L3_N39  (3 RCGs) :
+	shorting resistor: 3 (resistance=0.01,width=100) is inserted between nodes *54532:CP (located at (106900,228800)) and *54597:CP (located at (110450,216080))
+	shorting resistor: 24 (resistance=0.01,width=100) is inserted between nodes *69532:CP (located at (113750,217920)) and *54597:CP (located at (110450,216080))
+OPEN net: clk__L3_N40  (4 RCGs) :
+	shorting resistor: 11 (resistance=0.01,width=100) is inserted between nodes *69533:CP (located at (132150,224910)) and *66585:CP (located at (116250,216080))
+	shorting resistor: 24 (resistance=0.01,width=100) is inserted between nodes *54477:CP (located at (121250,214320)) and *54467:CP (located at (119850,219680))
+	shorting resistor: 25 (resistance=0.01,width=100) is inserted between nodes *54477:CP (located at (121250,214320)) and *66585:CP (located at (116250,216080))
+OPEN net: clk__L3_N41  (2 RCGs) :
+	shorting resistor: 1 (resistance=0.01,width=100) is inserted between nodes *54401:CP (located at (96700,223200)) and *54411:CP (located at (93850,217920))

@@ -1,0 +1,17 @@
+
+
+                         StarRC (TM)
+             Copyright (c) 1999-2013 Synopsys, Inc.
+                      All Rights Reserved
+
+
+ExecName: /software/nonrdist/starrc/linux_starrc/bin/StarXtract
+Version: H-2013.06-SP3
+Built on: Oct 16 2013 23:40:55
+Start Time: Sun Feb 23 12:59:19 2020
+
+Host ............ ieng6-ece-09.ucsd.edu
+
+WARNING: Found shorted nets (see file shorts.sum). The capacitances of these nets may be unreliable
+         due to the shorts. (SX-0955)
+WARNING: Found less than minimum spacing (see file smin.sum). (SX-0961)

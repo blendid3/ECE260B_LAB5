@@ -1,0 +1,44 @@
+-stage_id 1
+-o xout
+-clean_xin
+-i xin
+-tcad_file ../../nxtgrd/cln65g+_1p08m+alrdl_cworst.nxtgrd
+-layer_info layer_info
+-operating_temperature 125
+-density_based_thickness
+-do_cc2g
+-xm 400
+-extraction RC
+-rfr 0.99
+-suppress_file xtract.sup
+-covertical 4
+-enhanced_ground_cap_model
+-strict_cell_overlap_handling
+-new_scan_engine 2
+-clean_xin_mode 1
+-layer_based_nxtgrd_read
+-new_cap_environment 6
+-new_cap_environment_nondominant 1
+-new_cap_model 1
+-new_res_environment 1
+-new_res_rc
+-noncritical_min_area 0.25
+-noncritical_min_length 2
+-thickness_var_threshold 0.05
+-new_cap_plane_limit 4.0
+-new_cap_simple_via_pad_model 1
+-new_cap_sort_small_environments 8
+-max_env_model_length_multiple 0.0
+-max_model_length_ratio 0.0
+-simple_model_plane_limit 0.0
+-max_env_prune_length_multiple 2.0
+-max_prune_length_ratio 1.0
+-max_via_env_prune_length_multiple 2.0
+-enable_dynamic_3d_extensions 1
+-otherleftw_fudge
+-inter_pic_level_connections
+-fine_dbu
+-calc_text_count
+-skip_xtract_pp xout_split
+-correct_abutting_polygons
+-net_command_file select_nets

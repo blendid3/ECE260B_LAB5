@@ -1,0 +1,8 @@
+Num parts for violation reports = 0
+  parsing summary/xtract.sum
+WARNING: Found shorted nets (see file shorts.sum). The capacitances of these nets may be unreliable
+         due to the shorts. (SX-0955)
+WARNING: Found less than minimum spacing (see file smin.sum). (SX-0961)
+
+End Time: Sun Feb 23 12:59:19 2020
+

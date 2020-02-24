@@ -1,0 +1,529 @@
+Parsing option_file: xtract.tech (EX-304)
+Running Linux_32b  
+Initializing extraction ... (EX-724)
+Could not open file split_nets
+creating xout file: xout_split
+* Maximum opened files = 1
+Reading binary grd file ../../nxtgrd/cln65g+_1p08m+alrdl_cworst.nxtgrd ... (EX-135)
+----- R mode: reconstruct environments -----
+----- Importing design ----- 
+Ary stats nx=162 ny=161 dx=15803 dy=15889 nentry=684693  max/cell=79 av/cell=26.2516
+ Import design time is 1 seconds.
+----- Initializing models ----- 
+Initialize models time is 2 seconds.
+----- Extracting 17593 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:37  Mem=351.414
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(178.25,111.51),(178.35,111.69) Net=297,4824 Layer=1,1 r1=  R0,  x(1782200,1783500)  ;
+y(1111100,1123050) ideal=297 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1782500,1783500)  ;
+y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+Completed   1%  Time=00:00:00  RemainingTime=00:00:32  Mem=352.203
+Completed   2%  Time=00:00:01  RemainingTime=00:00:50  Mem=354.609
+Completed   3%  Time=00:00:01  RemainingTime=00:00:44  Mem=355.555
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(173.05,111.51),(173.15,111.69) Net=1182,4824 Layer=1,1 r1=  R0,  x(1730500,1731500)  ;
+y(1113800,1119800) ideal=1182 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1730500,1731500)
+; y(1115100,1116900) ideal=4824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(214.85,233.91),(214.95,234.09) Net=4797,6461 Layer=1,1 r1=  R0,  x(2148500,2149500)  ;
+y(2339100,2340900) ideal=4797 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2148500,2149900)
+; y(2338800,2342200) ideal=6461 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(215.25,196.31),(215.35,196.49) Net=4807,17824 Layer=1,1 r1=  R0,  x(2152500,2153500)  ;
+y(1963100,1964900) ideal=4807 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2152300,2153500)
+; y(1960800,1965000) ideal=17824 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(112.65,54.11),(112.725,54.29) Net=4814,26055 Layer=1,1 r1=  R0,  x(1126500,1127500)  ;
+y(541100,542900) ideal=4814 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1126350,1127250)  ;
+y(539500,544050) ideal=26055 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+WARNING: SMIN: Found less than minimum spacing. SMIN: 0.09, found: 0.07 (EX-702)
+SMIN: Location 
+BBox=(172.15,160.49),(172.22,160.31) Net=4817,325 Layer=1,1 r1=  R0,  x(1720500,1721500)  ;
+y(1603100,1604900) ideal=4817 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1722200,1723500)
+; y(1596950,1608900) ideal=325 act_level=1 pic_level=3 cap_level=3 0 0 (EX-356)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(205.45,170.91),(205.55,171.09) Net=4822,5589 Layer=1,1 r1=  R0,  x(2054500,2055500)  ;
+y(1709100,1710900) ideal=4822 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2054100,2055500)
+; y(1709100,1711400) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+Completed   4%  Time=00:00:02  RemainingTime=00:00:48  Mem=358.125
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(164.25,217.71),(164.35,217.89) Net=4831,4995 Layer=1,1 r1=  R0,  x(1642500,1643500)  ;
+y(2177100,2178900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1642400,1643500)
+; y(2175500,2182500) ideal=4995 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.11),(166.35,216.11) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2158800,2161100) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.22),(166.35,216.29) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2162200,2163200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.11),(166.35,216.22) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1661600,1663500)
+; y(2161100,2162200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.11),(166.35,216.22) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1661600,1663500)
+; y(2161100,2162200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.11),(166.35,216.22) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1661600,1663500)
+; y(2161100,2162200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.11),(166.35,216.11) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2158800,2161100) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.22),(166.35,216.29) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2162200,2163200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.22),(166.35,216.29) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2162200,2163200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.22),(166.35,216.29) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2162200,2163200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.11),(166.35,216.22) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1661600,1663500)
+; y(2161100,2162200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.11),(166.35,216.11) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2158800,2161100) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(166.25,216.22),(166.35,216.29) Net=4831,6893 Layer=1,1 r1=  R0,  x(1662500,1663500)  ;
+y(2161100,2162900) ideal=4831 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1662500,1663500)
+; y(2162200,2163200) ideal=6893 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(114.55,217.71),(114.55,217.89) Net=4833,6143 Layer=1,1 r1=  R0,  x(1144500,1145500)  ;
+y(2177100,2178900) ideal=4833 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1145500,1148500)
+; y(2175900,2182100) ideal=6143 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(114.55,217.71),(114.55,217.89) Net=4833,6143 Layer=1,1 r1=  R0,  x(1144500,1145500)  ;
+y(2177100,2178900) ideal=4833 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1145500,1148500)
+; y(2175900,2182100) ideal=6143 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(114.55,217.71),(114.55,217.89) Net=4833,6143 Layer=1,1 r1=  R0,  x(1144500,1145500)  ;
+y(2177100,2178900) ideal=4833 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1145500,1148500)
+; y(2175900,2182100) ideal=6143 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(114.55,217.71),(114.55,217.89) Net=4833,6143 Layer=1,1 r1=  R0,  x(1144500,1145500)  ;
+y(2177100,2178900) ideal=4833 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1145500,1148500)
+; y(2175900,2182100) ideal=6143 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(114.55,217.71),(114.55,217.89) Net=4833,6143 Layer=1,1 r1=  R0,  x(1144500,1145500)  ;
+y(2177100,2178900) ideal=4833 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1145500,1148500)
+; y(2175900,2182100) ideal=6143 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+SHORT: Two different nets TOUCH each other; ignoring the touch.
+ BBox=(114.55,217.71),(114.55,217.89) Net=4833,6143 Layer=1,1 r1=  R0,  x(1144500,1145500)  ;
+y(2177100,2178900) ideal=4833 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(1145500,1148500)
+; y(2175900,2182100) ideal=6143 act_level=1 pic_level=3 cap_level=3 0 0 (EX-503)
+ Processing 1000 of 17593 nets (5.68408%) ...
+Completed   5%  Time=00:00:02  RemainingTime=00:00:45  Mem=359.91
+SMIN: Location 
+BBox=(205.185,170.895),(205.2,170.88) Net=5589,1072 Layer=1,1 r1=  R0,  x(2052000,2053000)  ;
+y(1708800,1711200) ideal=5589 act_level=1 pic_level=3 cap_level=3 0 0 r2=  R0,  x(2045550,2051850)
+; y(1707350,1708950) ideal=1072 act_level=1 pic_level=3 cap_level=3 0 0 (EX-356)
+Completed  10%  Time=00:00:03  RemainingTime=00:00:32  Mem=365.195
+ Processing 2000 of 17593 nets (11.3682%) ...
+Completed  15%  Time=00:00:06  RemainingTime=00:00:32  Mem=377.191
+ Processing 3000 of 17593 nets (17.0522%) ...
+Completed  20%  Time=00:00:07  RemainingTime=00:00:31  Mem=386.004
+ Processing 4000 of 17593 nets (22.7363%) ...
+Completed  25%  Time=00:00:09  RemainingTime=00:00:27  Mem=395.312
+ Processing 5000 of 17593 nets (28.4204%) ...
+Completed  30%  Time=00:00:11  RemainingTime=00:00:24  Mem=404.676
+ Processing 6000 of 17593 nets (34.1045%) ...
+Completed  35%  Time=00:00:13  RemainingTime=00:00:23  Mem=414.445
+ Processing 7000 of 17593 nets (39.7886%) ...
+Completed  40%  Time=00:00:14  RemainingTime=00:00:21  Mem=423.438
+ Processing 8000 of 17593 nets (45.4726%) ...
+Completed  45%  Time=00:00:15  RemainingTime=00:00:19  Mem=432.469
+Completed  50%  Time=00:00:17  RemainingTime=00:00:17  Mem=441.438
+ Processing 9000 of 17593 nets (51.1567%) ...
+Completed  55%  Time=00:00:19  RemainingTime=00:00:16  Mem=451.465
+ Processing 10000 of 17593 nets (56.8408%) ...
+Completed  60%  Time=00:00:21  RemainingTime=00:00:13  Mem=460.223
+ Processing 11000 of 17593 nets (62.5249%) ...
+Completed  65%  Time=00:00:22  RemainingTime=00:00:12  Mem=469.652
+ Processing 12000 of 17593 nets (68.2089%) ...
+Completed  70%  Time=00:00:24  RemainingTime=00:00:10  Mem=478.898
+ Processing 13000 of 17593 nets (73.893%) ...
+Completed  75%  Time=00:00:26  RemainingTime=00:00:08  Mem=488.668
+ Processing 14000 of 17593 nets (79.5771%) ...
+Completed  80%  Time=00:00:27  RemainingTime=00:00:07  Mem=497.793
+ Processing 15000 of 17593 nets (85.2612%) ...
+Completed  85%  Time=00:00:29  RemainingTime=00:00:04  Mem=505.879
+Completed  90%  Time=00:00:30  RemainingTime=00:00:04  Mem=515.684
+ Processing 16000 of 17593 nets (90.9453%) ...
+Completed  95%  Time=00:00:32  RemainingTime=00:00:01  Mem=524.609
+ Processing 17000 of 17593 nets (96.6293%) ...
+Completed 100%  Time=00:00:34  RemainingTime=00:00:00  Mem=533.984
+----- Reducing 17593 nets ----- 
+Extraction time is 38 seconds.
+Total capacitance environments constructed = 3694655
+Unique capacitance environments constructed = 3034602 (82.1349%)
+Total resistance environments constructed = 1983313
+Unique resistance environments constructed = 1177126 (59.3515%)
+Extracted 5722204 capacitors, 693590 resistors, 0 reluctors, 681675 nodes
+Reduced to 63771 nodes,  (90.645%)
+Reduced to 50905 resistors,  (92.6606%)
+Reduced to 58147 capacitors,  (98.9838%)
+* Maximum opened files = 2
+  
+xTractor      Elp=00:00:43 Cpu=00:00:42 Usr=40.0   Sys=2.5    Mem=544.5 
+  
+Done          Elp=00:00:43 Cpu=00:00:42 Usr=40.0   Sys=2.5    Mem=544.5 
+

@@ -1,0 +1,7 @@
+Parsing option_file: netlist.tech (EX-304)
+WARNING: found open net(s) in the design. please check opens.sum file. (EX-414)
+  
+Netlist       Elp=00:00:03 Cpu=00:00:02 Usr=2.1    Sys=0.3    Mem=69.7  
+xTractor      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=66.9  
+  
+Done          Elp=00:00:03 Cpu=00:00:02 Usr=2.1    Sys=0.3    Mem=69.7  

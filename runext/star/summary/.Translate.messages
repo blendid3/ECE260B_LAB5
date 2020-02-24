@@ -1,0 +1,14 @@
+create_xin_writer; sort_xin_in_memory YES cut_trap YES text_counter NO
+  
+InitDB        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=57.9  
+ReadHNdb      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=60.0  
+NetSelect     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=60.1  
+CellSelect    Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=60.1  
+ReadLEF       Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=64.3  
+Db2Xin        Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=77.1  
+Translate     Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=77.6  
+  
+Done          Elp=00:00:02 Cpu=00:00:00 Usr=0.4    Sys=0.2    Mem=77.6  
+
+End Time: Sun Feb 23 12:58:31 2020
+
