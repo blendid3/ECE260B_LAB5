@@ -4,7 +4,7 @@ Information: Derived library resistance unit is 1.000000 Kohm (Time unit is 1 ns
 Report : read_parasitics /home/linux/ieng6/ee260bwi20/haz023/lab5/ovc_runpt/aes_cipher_top.spef
 Design : aes_cipher_top
 Version: K-2015.06-SP3-1
-Date   : Mon Feb 24 21:28:04 2020
+Date   : Tue Feb 25 14:00:44 2020
 ****************************************
 
         0 error(s)

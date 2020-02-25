@@ -7,7 +7,7 @@ Report : timing
 	-sort_by slack
 Design : aes_cipher_top
 Version: K-2015.06-SP3-1
-Date   : Mon Feb 24 21:19:31 2020
+Date   : Mon Feb 24 21:41:34 2020
 ****************************************
 
 Warning: There are 24 invalid end points for constrained paths. (UITE-416)

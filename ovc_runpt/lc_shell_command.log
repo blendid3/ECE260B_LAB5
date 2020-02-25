@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running lc_shell Version K-2015.06-SP1 for linux64 -- Jul 13, 2015
-#@ # Date:   Mon Feb 24 21:28:01 2020
+#@ # Date:   Tue Feb 25 14:00:41 2020
 #@ # Run by: haz023@ieng6-249.ucsd.edu
 #@ 
 
@@ -461,8 +461,8 @@ source /acsnfs3/software/Synopsys-primetime-2015.06-SP3/admin/setup//.synopsys_l
 #@ set_check_library_options
 #@ # -- End source /acsnfs3/software/Synopsys-primetime-2015.06-SP3/admin/setup//.synopsys_lc.setup
 
-source -echo -verbose /tmp/_pt1rDFEiVw
-#@ # -- Starting source /tmp/_pt1rDFEiVw
+source -echo -verbose /tmp/_pt1rRyaLs4
+#@ # -- Starting source /tmp/_pt1rRyaLs4
 
 #@ echo "ptxr"
 #@ set search_path  {  }
@@ -483,6 +483,6 @@ source -echo -verbose /tmp/_pt1rDFEiVw
 #@   set a_ld [get_object_name $libdes]
 #@   lappend loaded $a_ld
 #@ }
-#@ write_lib -format db -output /tmp/_pt1rXPOkUN/1.db $a_ld
+#@ write_lib -format db -output /tmp/_pt1rHxbgub/1.db $a_ld
 #@ remove_design -all > /dev/null
 #@ exit
