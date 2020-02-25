@@ -1,14 +1,14 @@
 * StarRCXT command file for 65nm worst corner
 
-LEF_FILE: /home/linux/ieng6/ee260bwi20/public/data/libraries/lef/tcbn65gplus_8lmT2.lef
+LEF_FILE: %%%%PATH_AND_FILE_NAME%%%%
 
 LEF_USE_OBS: NO
 
-TOP_DEF_FILE: ../aes_cipher_top/aes_cipher_top.def
+TOP_DEF_FILE: %%%%PATH_AND_FILE_NAME%%%%
 
-TCAD_GRD_FILE:  ../nxtgrd/cln65g+_1p08m+alrdl_cworst.nxtgrd
+TCAD_GRD_FILE: %%%%PATH_AND_FILE_NAME_FOR_CAP_WORST%%%%
 
-MAPPING_FILE: ../layermap/tsmc_8lm.map
+MAPPING_FILE: %%%%PATH_AND_FILE_NAME%%%%
 
 EXTRACTION: RC
 
